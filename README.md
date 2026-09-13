@@ -98,7 +98,7 @@ datasets/euromillions_historical_data/ dataset hasard/probabilites
 projects/                        framework projet
 kaggle/                          strategie portfolio Kaggle
 data/snapshots/                  snapshots Google Trends versionnes
-docs/                            guides enseignant et NotebookLM
+docs/                            documentation de cours et exports NotebookLM
 ```
 
 ## Parcours pédagogique
