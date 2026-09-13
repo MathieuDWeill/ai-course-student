@@ -1,0 +1,5 @@
+,dtype,missing,unique
+date,datetime64[ns],0,262
+chatgpt,int64,0,14
+iphone,int64,0,9
+meteo,int64,0,65

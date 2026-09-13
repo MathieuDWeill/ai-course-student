@@ -1,0 +1,4 @@
+layer,purpose,example
+raw lake,preserve source snapshots,data/snapshots/*.csv
+curated warehouse,serve trusted analysis tables,outputs/bloc1/clean_trends_long.csv
+data mart,serve BI and decision views,outputs/bloc3/dashboard_dataset.csv

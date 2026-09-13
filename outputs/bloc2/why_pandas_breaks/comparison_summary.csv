@@ -1,0 +1,6 @@
+step,seconds,python_peak_mb,what_hurts
+read large transactions CSV,0.209,64.3,CSV text parsing and type inference
+read customers CSV,0.013,3.8,"dimension table still fits, but adds join cost"
+read products CSV,0.003,0.3,"small table, but required for enrichment"
+pandas groupby dashboard table,2.777,69.9,groupby creates derived columns and aggregation work
+joins + multi-dimensional dashboard,2.61,88.7,joins create large intermediate tables and memory pressure

@@ -1,0 +1,4 @@
+signal,rows,average,median,peak,latest,latest_vs_median
+chatgpt,262,2.9,2.0,13,12,10.0
+iphone,262,8.0,8.0,16,8,0.0
+meteo,262,44.96,42.0,100,27,-15.0

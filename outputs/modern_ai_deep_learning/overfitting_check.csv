@@ -1,0 +1,3 @@
+model,train_accuracy,test_accuracy,generalization_gap
+regularized_mlp_early_stopping,0.978,0.962,0.016
+larger_mlp_no_early_stopping,1.0,0.98,0.02

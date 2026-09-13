@@ -1,0 +1,212 @@
+{
+  "main_hot": [
+    {
+      "number": 44,
+      "frequency": 224,
+      "share": 0.02264914054600607
+    },
+    {
+      "number": 42,
+      "frequency": 224,
+      "share": 0.02264914054600607
+    },
+    {
+      "number": 23,
+      "frequency": 223,
+      "share": 0.02254802831142568
+    },
+    {
+      "number": 19,
+      "frequency": 220,
+      "share": 0.022244691607684528
+    },
+    {
+      "number": 29,
+      "frequency": 219,
+      "share": 0.022143579373104145
+    },
+    {
+      "number": 10,
+      "frequency": 217,
+      "share": 0.021941354903943378
+    },
+    {
+      "number": 17,
+      "frequency": 216,
+      "share": 0.02184024266936299
+    },
+    {
+      "number": 21,
+      "frequency": 213,
+      "share": 0.02153690596562184
+    },
+    {
+      "number": 37,
+      "frequency": 212,
+      "share": 0.021435793731041455
+    },
+    {
+      "number": 50,
+      "frequency": 211,
+      "share": 0.02133468149646107
+    }
+  ],
+  "main_cold": [
+    {
+      "number": 22,
+      "frequency": 154,
+      "share": 0.01557128412537917
+    },
+    {
+      "number": 33,
+      "frequency": 173,
+      "share": 0.01749241658240647
+    },
+    {
+      "number": 18,
+      "frequency": 176,
+      "share": 0.017795753286147624
+    },
+    {
+      "number": 46,
+      "frequency": 177,
+      "share": 0.017896865520728007
+    },
+    {
+      "number": 32,
+      "frequency": 179,
+      "share": 0.018099089989888777
+    },
+    {
+      "number": 40,
+      "frequency": 180,
+      "share": 0.01820020222446916
+    },
+    {
+      "number": 43,
+      "frequency": 180,
+      "share": 0.01820020222446916
+    },
+    {
+      "number": 41,
+      "frequency": 181,
+      "share": 0.018301314459049544
+    },
+    {
+      "number": 36,
+      "frequency": 185,
+      "share": 0.01870576339737108
+    },
+    {
+      "number": 1,
+      "frequency": 186,
+      "share": 0.018806875631951468
+    }
+  ],
+  "main_overdue": [
+    {
+      "number": 13,
+      "last_seen": "2026-04-21 00:00:00",
+      "draws_since_seen": 39
+    },
+    {
+      "number": 32,
+      "last_seen": "2026-05-12 00:00:00",
+      "draws_since_seen": 33
+    },
+    {
+      "number": 43,
+      "last_seen": "2026-05-15 00:00:00",
+      "draws_since_seen": 32
+    },
+    {
+      "number": 20,
+      "last_seen": "2026-05-19 00:00:00",
+      "draws_since_seen": 31
+    },
+    {
+      "number": 4,
+      "last_seen": "2026-06-12 00:00:00",
+      "draws_since_seen": 24
+    },
+    {
+      "number": 22,
+      "last_seen": "2026-06-12 00:00:00",
+      "draws_since_seen": 24
+    },
+    {
+      "number": 18,
+      "last_seen": "2026-06-16 00:00:00",
+      "draws_since_seen": 23
+    },
+    {
+      "number": 41,
+      "last_seen": "2026-06-19 00:00:00",
+      "draws_since_seen": 22
+    },
+    {
+      "number": 6,
+      "last_seen": "2026-06-26 00:00:00",
+      "draws_since_seen": 20
+    },
+    {
+      "number": 1,
+      "last_seen": "2026-06-30 00:00:00",
+      "draws_since_seen": 19
+    }
+  ],
+  "star_hot": [
+    {
+      "lucky_star": 2,
+      "frequency": 393,
+      "share": 0.09934277047522751
+    },
+    {
+      "lucky_star": 3,
+      "frequency": 386,
+      "share": 0.09757330637007078
+    },
+    {
+      "lucky_star": 8,
+      "frequency": 375,
+      "share": 0.09479271991911022
+    },
+    {
+      "lucky_star": 9,
+      "frequency": 365,
+      "share": 0.0922649140546006
+    },
+    {
+      "lucky_star": 6,
+      "frequency": 355,
+      "share": 0.089737108190091
+    }
+  ],
+  "star_cold": [
+    {
+      "lucky_star": 12,
+      "frequency": 179,
+      "share": 0.04524772497472194
+    },
+    {
+      "lucky_star": 11,
+      "frequency": 266,
+      "share": 0.0672396359959555
+    },
+    {
+      "lucky_star": 10,
+      "frequency": 282,
+      "share": 0.07128412537917088
+    },
+    {
+      "lucky_star": 4,
+      "frequency": 314,
+      "share": 0.07937310414560161
+    },
+    {
+      "lucky_star": 1,
+      "frequency": 340,
+      "share": 0.0859453993933266
+    }
+  ]
+}

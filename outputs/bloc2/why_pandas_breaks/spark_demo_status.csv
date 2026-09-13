@@ -1,0 +1,2 @@
+message,reason
+PySpark not available locally. Use the displayed Spark syntax in Colab or a Spark environment.,ModuleNotFoundError

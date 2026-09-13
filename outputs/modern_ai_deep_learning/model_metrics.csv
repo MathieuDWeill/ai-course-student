@@ -1,0 +1,3 @@
+model,train_accuracy,test_accuracy,representation
+classic_ml_handcrafted_features,0.675,0.649,human-designed summary features
+lightweight_neural_network_raw_pixels,0.978,0.962,learned hidden representation from pixels

@@ -1,0 +1,19 @@
+{
+  "bloc": "bloc2",
+  "pipeline": "raw snapshots -> clean table -> formats -> partitions -> monitoring",
+  "ready": true,
+  "artifacts": [
+    "outputs/bloc2/architecture_decision.md",
+    "outputs/bloc2/clean_trends_export.csv",
+    "outputs/bloc2/clean_trends_export.parquet",
+    "outputs/bloc2/clean_trends_sample.json",
+    "outputs/bloc2/data_inventory.csv",
+    "outputs/bloc2/format_comparison.csv",
+    "outputs/bloc2/lake_warehouse_decision.csv",
+    "outputs/bloc2/mini_pipeline_manifest.json",
+    "outputs/bloc2/nosql_signal_profiles.json",
+    "outputs/bloc2/partition_summary.csv",
+    "outputs/bloc2/pipeline_monitoring_report.csv",
+    "outputs/bloc2/why_pandas_breaks"
+  ]
+}

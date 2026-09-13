@@ -1,0 +1,4 @@
+format,best_for,created
+CSV,human-readable exchange,True
+JSON,API-like records and documents,True
+Parquet,analytics storage with schema/compression,True

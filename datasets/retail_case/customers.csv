@@ -1,0 +1,6 @@
+customer_id,customer_name,city,segment
+C001,Alice,Niort,Consumer
+C002,Benoit,Angers,SMB
+C003,Chloe,Nantes,Consumer
+C004,David,Tours,Enterprise
+C005,Emma,Poitiers,SMB

@@ -1,0 +1,6 @@
+element,value
+hypothesis,AI-content timing based on signal shifts improves engagement.
+unit,weekly content or campaign slot
+metric,click-through rate or qualified visits
+guardrail,do not reduce conversion quality
+decision_rule,ship if uplift is positive and guardrail is stable

@@ -1,0 +1,32 @@
+[
+  {
+    "signal": "chatgpt",
+    "observations": 262,
+    "latest_date": "2026-01-18",
+    "latest_interest": 12.0,
+    "summary": {
+      "mean": 2.8969465648854964,
+      "max": 13.0
+    }
+  },
+  {
+    "signal": "iphone",
+    "observations": 262,
+    "latest_date": "2026-01-18",
+    "latest_interest": 8.0,
+    "summary": {
+      "mean": 7.9961832061068705,
+      "max": 16.0
+    }
+  },
+  {
+    "signal": "meteo",
+    "observations": 262,
+    "latest_date": "2026-01-18",
+    "latest_interest": 27.0,
+    "summary": {
+      "mean": 44.958015267175576,
+      "max": 100.0
+    }
+  }
+]

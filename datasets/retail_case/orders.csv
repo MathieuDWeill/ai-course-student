@@ -1,0 +1,7 @@
+order_id,customer_id,order_date,channel
+O1001,C001,2026-01-05,web
+O1002,C002,2026-01-05,store
+O1003,C001,2026-01-06,web
+O1004,C003,2026-01-07,web
+O1005,C004,2026-01-07,partner
+O1006,C005,2026-01-08,web

@@ -1,0 +1,31 @@
+{
+  "bloc": "bloc1",
+  "ready": true,
+  "artifacts": [
+    {
+      "artifact": "clean_trends_long.csv",
+      "exists": true,
+      "bytes": 16054
+    },
+    {
+      "artifact": "eda_signal_summary.csv",
+      "exists": true,
+      "bytes": 149
+    },
+    {
+      "artifact": "feature_table.csv",
+      "exists": true,
+      "bytes": 13040
+    },
+    {
+      "artifact": "model_metrics.csv",
+      "exists": true,
+      "bytes": 61
+    },
+    {
+      "artifact": "attention_regimes.csv",
+      "exists": true,
+      "bytes": 5334
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+artifact,exists,bytes,ready
+clean_trends_long.csv,True,16054,True
+eda_signal_summary.csv,True,149,True
+feature_table.csv,True,13040,True
+model_metrics.csv,True,61,True
+attention_regimes.csv,True,5334,True

@@ -1,0 +1,6 @@
+metric,value
+observed_max_minus_min,70.0
+simulation_mean_max_minus_min,60.785
+simulation_p95_max_minus_min,77.0
+observed_top_frequency,224.0
+simulation_p95_top_frequency,240.0

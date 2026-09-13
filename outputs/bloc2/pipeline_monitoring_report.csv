@@ -1,0 +1,5 @@
+artifact,exists,bytes,status
+outputs/bloc1/clean_trends_long.csv,True,16054,ok
+outputs/bloc1/model_metrics.csv,True,61,ok
+outputs/bloc2/format_comparison.csv,True,153,ok
+outputs/bloc2/partition_summary.csv,True,455,ok

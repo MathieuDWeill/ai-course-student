@@ -1,0 +1,6 @@
+artifact,purpose
+comparison_summary.csv,show where pandas hurts
+architecture_note.md,explain why architecture matters
+parquet_vs_csv_note.md,compare storage choices
+pipeline_recommendation.md,recommend production direction
+spark_demo_status.csv,show Spark syntax/path

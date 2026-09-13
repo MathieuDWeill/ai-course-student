@@ -1,0 +1,10 @@
+{
+  "final_product_artifacts": [
+    "outputs/final_product/executive_summary.md",
+    "outputs/final_product/final_kpi_snapshot.csv",
+    "outputs/final_product/final_manifest.json",
+    "outputs/final_product/final_model_metrics.csv",
+    "outputs/final_product/final_pipeline_status.csv",
+    "outputs/final_product/final_signal_summary.csv"
+  ]
+}
