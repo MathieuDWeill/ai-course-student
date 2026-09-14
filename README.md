@@ -34,6 +34,8 @@ cd ai-course-student
 .\run.bat
 ```
 
+Si Windows bloque ou ouvre les fichiers au lieu de les exécuter, voir `WINDOWS_HELP.md`.
+
 Si vous ne forkerez pas tout de suite, vous pouvez cloner la version de départ :
 
 ```bash

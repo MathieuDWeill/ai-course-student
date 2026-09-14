@@ -1,0 +1,5 @@
+# Optional dependencies for later course blocks.
+# Not required for S1.
+-r requirements.txt
+pytrends>=4.9.2
+pyarrow>=15.0

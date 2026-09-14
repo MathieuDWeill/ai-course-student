@@ -2,17 +2,26 @@
 setlocal
 cd /d "%~dp0"
 
-where py >nul 2>nul
-if %errorlevel%==0 (
-  set "PY=py -3"
-) else (
-  set "PY=python"
+set "PY="
+
+for %%V in (3.12 3.11 3.10) do (
+  if not defined PY (
+    py -%%V --version >nul 2>nul
+    if not errorlevel 1 set "PY=py -%%V"
+  )
+)
+
+if not defined PY (
+  python --version >nul 2>nul
+  if not errorlevel 1 set "PY=python"
 )
 
 echo ==^> Using Python
 %PY% --version
 if errorlevel 1 (
-  echo Python introuvable. Installez Python 3.10+ depuis python.org puis relancez.
+  echo Python introuvable ou version non compatible.
+  echo Installez Python 3.11 depuis https://www.python.org/downloads/
+  echo Cochez "Add python.exe to PATH", puis relancez setup.bat.
   exit /b 1
 )
 
