@@ -12,12 +12,26 @@ Le cours apprend à poser une question, comprendre le grain des données, vérif
 
 Option recommandée : cliquez sur **Use this template** ou **Fork** sur GitHub, puis clonez votre propre copie.
 
+Important : ouvrez un **terminal** dans le dossier du projet. Ne double-cliquez pas sur les fichiers `setup`, `check` ou `run`.
+
+### Mac / Linux / Git Bash
+
 ```bash
 git clone https://github.com/VOTRE-USER/ai-course-student.git
 cd ai-course-student
-./setup.sh
-./check.sh
-./run.sh
+bash setup.sh
+bash check.sh
+bash run.sh
+```
+
+### Windows PowerShell
+
+```powershell
+git clone https://github.com/VOTRE-USER/ai-course-student.git
+cd ai-course-student
+.\setup.bat
+.\check.bat
+.\run.bat
 ```
 
 Si vous ne forkerez pas tout de suite, vous pouvez cloner la version de départ :
@@ -27,7 +41,9 @@ git clone https://github.com/MathieuDWeill/ai-course-student.git
 cd ai-course-student
 ```
 
-Si le shell refuse l'exécution :
+Si un fichier `.sh` s'ouvre au lieu de s'exécuter sous Windows, utilisez les commandes `.bat` ci-dessus.
+
+Si Git Bash refuse l'exécution directe :
 
 ```bash
 bash setup.sh
