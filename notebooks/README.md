@@ -24,3 +24,16 @@ Naming convention:
 - `TPL_...ipynb`: reusable template, not part of the main run order.
 
 Use `../RUN_ALL_COURSE.md` for the executable order and produced artifacts.
+
+## Complément séance 4
+
+Après `01_python_data_science/B1_S04_supervised_ml_baseline.ipynb`, utiliser
+`01_python_data_science/B1_S04b_supervised_ml_diagnostic.ipynb` pour diagnostiquer
+un score parfait, reformuler la cible et comparer les modèles dans le temps.
+Ce complément écrit dans `outputs/bloc1/s04_diagnostic/`.
+
+Pour une démonstration simple de modèles qui apprennent, ouvrir
+`01_python_data_science/B1_S04c_supervised_ml_iris_demo.ipynb` : classification
+de fleurs Iris avec arbre, voisins et régression logistique, comparés à une
+référence naïve. Autonome, sans téléchargement. Pour une séance accessible,
+commencer par Iris ; utiliser S04b pour le diagnostic de l'exemple temporel.
