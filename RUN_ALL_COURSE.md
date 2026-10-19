@@ -24,6 +24,7 @@ Bloc 1 - Data Science foundation:
 3. `notebooks/01_python_data_science/B1_S04_supervised_ml_baseline.ipynb`
    - Démonstration autonome : `notebooks/01_python_data_science/B1_S04c_supervised_ml_iris_demo.ipynb` (trois modèles de classification, référence naïve et visualisations).
    - Complément diagnostic : `notebooks/01_python_data_science/B1_S04b_supervised_ml_diagnostic.ipynb` (limites du score initial et validation chronologique ; sorties dans `outputs/bloc1/s04_diagnostic/`).
+   - Alternative travail : `notebooks/01_python_data_science/B1_S04d_supervised_ml_retards_demo.ipynb` (prévision des retards de tâches, données simulées, autonome).
 4. `notebooks/01_python_data_science/B1_S05_unsupervised_patterns.ipynb`
 5. `notebooks/01_python_data_science/B1_S06_reproducible_data_science_pipeline.ipynb`
 6. `notebooks/01_python_data_science/B1_S07_S08_guided_project_restitution.ipynb`

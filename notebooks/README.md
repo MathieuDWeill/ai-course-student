@@ -37,3 +37,8 @@ Pour une démonstration simple de modèles qui apprennent, ouvrir
 de fleurs Iris avec arbre, voisins et régression logistique, comparés à une
 référence naïve. Autonome, sans téléchargement. Pour une séance accessible,
 commencer par Iris ; utiliser S04b pour le diagnostic de l'exemple temporel.
+
+Alternative liée au travail :
+`01_python_data_science/B1_S04d_supervised_ml_retards_demo.ipynb`.
+QUID : anticiper le retard d'une tâche au démarrage. Données explicitement
+simulées, comparaison arbre / régression logistique / forêt et référence naïve.
