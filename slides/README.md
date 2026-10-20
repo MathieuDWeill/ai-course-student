@@ -10,3 +10,7 @@ Pour S4 : les diapos 44–60 servent de fiches d'aide pendant l'atelier ;
 la diapo 61 récapitule les règles. Les extraits Python sont à adapter aux données ;
 les diapos 46–47 illustrent train/validation/test pour des observations indépendantes.
 Pour les matchs, utiliser un découpage chronologique.
+
+## Révision de l’écrit individuel
+
+- [Cours de révision en 10 questions](ESEO_Cours_Revision_10_Questions.pdf) : fiche étudiant de 4 pages avec réponses et exemples. L’examen dure 30 minutes et porte sur cinq questions reprises à l’identique parmi ces dix, pour 5 points.
