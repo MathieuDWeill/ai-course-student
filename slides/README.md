@@ -14,3 +14,7 @@ Pour les matchs, utiliser un découpage chronologique.
 ## Révision de l’écrit individuel
 
 - [Cours de révision en 10 questions](ESEO_Cours_Revision_10_Questions.pdf) : fiche étudiant de 4 pages avec réponses et exemples. L’examen dure 30 minutes et porte sur cinq questions reprises à l’identique parmi ces dix, pour 5 points.
+
+## Atelier complémentaire
+
+- [Atelier StatQuest — biais, variance et audit des modèles](ESEO_Atelier_StatQuest_Biais_Variance_Audit_Modeles.pptx).
