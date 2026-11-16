@@ -1,6 +1,8 @@
-# ML avancé — Jour 1 : MyLittleMLLab
+# ML avancé — MyLittleMLLab
 
-**Notebook à ouvrir : [notebooks/AML_01_atelier.ipynb](notebooks/AML_01_atelier.ipynb).**
+**J2 : [guide de démarrage](DEMARRER_J2.md) · [notebook AML_02](notebooks/AML_02_atelier.ipynb).**
+
+**Notebook J1 à ouvrir : [notebooks/AML_01_atelier.ipynb](notebooks/AML_01_atelier.ipynb).**
 
 **[Télécharger le kit complet J1 (ZIP)](https://github.com/MathieuDWeill/ai-course-student/raw/refs/heads/main/kits/MyLittleMLLab_J1.zip)** · [Fiche de séance](fiches/AML_01.md) · [Cours rédigé](lectures/AML_01_cours.md)
 
