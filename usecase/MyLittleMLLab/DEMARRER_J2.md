@@ -47,7 +47,7 @@ Les numéros comptent toutes les cellules du fichier, textes compris. Ils ne dé
 | 30 | Montrer pourquoi copier la réponse invalide le score | 13 |
 | 19 | Enregistrer et expliquer les preuves du socle | 13 et 16 |
 
-La validation croisée porte sur le train local `tr`. La validation locale `va` reste en dehors de ces entraînements et prédictions OOF. Le test officiel Kaggle n’est pas utilisé pour évaluer les modèles de cette séance.
+La validation croisée porte sur le train local `tr`. La validation locale `va` reste en dehors de ces entraînements et prédictions OOF. Le test officiel Kaggle ne sert pas à calculer nos métriques locales. Après le choix du modèle, la cellule 40 produit ses prédictions pour préparer une soumission.
 
 ## Votre dossier de preuves
 
@@ -63,3 +63,22 @@ La cellule 28 ajoute `regularisation_cv.csv`. Si le manifeste existe déjà, son
 ## Si un calcul ou une installation bloque
 
 Ne modifiez pas dix lignes au hasard. Montrez le message au professeur. Les captures du cours permettent de poursuivre le raisonnement. Les tailles et scores peuvent différer entre profils ou versions : comparez vos propres méthodes avec le même protocole. Un résultat OOF est une évaluation de développement, pas une garantie sur de nouvelles périodes ou de nouvelles personnes.
+
+## Atelier de compétition Kaggle
+
+Récupérez la version enrichie du notebook : elle contient **42 cellules**, textes compris. L’environnement de J1 suffit. Après le socle et la cellule 19, nous avançons ensemble :
+
+| Cellule | Travail | Dépend de |
+|---|---|---|
+| 32 | Comparer dummy, logistique C=0,1 et boosting sur les mêmes folds | 10, 13 |
+| 34 | Choisir et enregistrer la configuration sur la CV | 32 |
+| 36 | Contrôler le choix sur la validation locale va | 34 |
+| 38 | Examiner les erreurs au seuil 0,5 | 36 |
+| 40 | Réapprendre et fabriquer submission.csv avec contrôles | 36 |
+| 42 | Tenir le journal et renseigner le score public réel après dépôt | 40 |
+
+La cellule 32 effectue neuf apprentissages. La cellule 40 réapprend sur un échantillon stratifié du train officiel limité à LIMIT, puis prédit toutes les lignes du test officiel. Ce réapprentissage peut inclure des lignes de l’ancienne validation locale : elle ne mesure donc plus indépendamment le modèle réappris.
+
+Les fichiers restent sur votre ordinateur. Le dépôt sur [Kaggle](https://www.kaggle.com/competitions/playground-series-s6e11) est manuel, après lecture des règles, des modalités d’équipe et de la page Evaluation. Cette compétition utilise des scores continus de fraude. Le journal conserve `None` tant qu’aucun score public réel n’a été reçu.
+
+Le dossier `runs/j2_…` conserve aussi comparaison_modeles.csv, selection.json, controle_validation.json, audit_validation.csv et journal_kaggle.csv. Le CSV de soumission et release.json se trouvent dans le dossier `runs/submission_fraud_…` affiché par la cellule 40.

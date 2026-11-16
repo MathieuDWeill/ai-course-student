@@ -66,3 +66,13 @@ Sur le train local de … lignes, nous utilisons … folds. L’AUC moyenne des 
 Au seuil …, nous produisons … alertes, dont … vraies alertes, et nous ratons … fraudes. Le choix de ce seuil dépend de … .
 
 Pour l’usage que nous visons, notre découpage devrait aussi contrôler … . La prochaine vérification serait … .
+
+## Notre livrable Kaggle
+
+- Tableau de comparaison sur les mêmes trois folds (cellule 32).
+- Choix enregistré avant contrôle local (34, puis 36).
+- Explication d’une erreur et du rôle du seuil (38).
+- CSV contrôlé qui respecte sample_submission.csv (40).
+- Journal avec le score public réellement reçu, ou None (42).
+
+Avant le dépôt : pourquoi ce modèle ? Quel volume de train ? Quelle AUC CV ? Quels IDs dans le CSV ? Quelle expérience feriez-vous ensuite ?

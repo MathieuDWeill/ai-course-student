@@ -78,3 +78,46 @@ Un pipeline protège l’ordre de préparation ; il ne répare pas un split inad
 ## Passage au notebook
 
 Retrouver une entrée, un calcul et une sortie de ce chapitre dans le notebook AML correspondant. Exécuter une cellule, expliquer le résultat, puis seulement passer à la variation demandée.
+
+
+# Atelier Kaggle : de la validation à une soumission
+
+## La question de compétition
+
+Nous participons à Predicting Credit Card Fraud, sur les données officielles déjà utilisées en J1. Le train officiel contient is_fraud. Le test officiel contient les paiements à scorer, sans cette cible. Le sample_submission décrit le contrat du fichier final. Nous cherchons une configuration qui classe les fraudes au-dessus des paiements normaux. Les règles et la page Evaluation de la compétition restent la référence pour le dépôt.
+
+## Comprendre la ROC-AUC avec quatre paiements
+
+Deux fraudes et deux paiements normaux forment quatre paires de classes différentes. Avec les cibles [1,1,0,0] et les scores [0.9,0.6,0.4,0.1], toutes les paires sont bien ordonnées : AUC 1. Avec [0.9,0.2,0.8,0.1], trois paires sur quatre sont bien ordonnées : AUC 0.75. En cas d’égalité, la paire reçoit un demi-crédit. Un score constant vaut 0.5 quand les deux classes sont présentes. Cette mesure décrit un classement. Elle ne donne pas le pourcentage de classes prédites correctement ni une garantie de calibration des probabilités.
+
+## Comparer les configurations (cellule 32)
+
+Nous annonçons trois candidats : dummy, logistique avec C=0.1 et boosting avec 80 itérations et 15 feuilles maximales. Le dummy prédit un score constant. La logistique apprend des coefficients. Le boosting ajoute successivement des petits arbres pour améliorer la fonction apprise. Notre pipeline de boosting traite les codes ordinaux des catégories comme des nombres, ce qui constitue une limite de cette configuration.
+
+Les données, les trois folds stratifiés et la métrique restent identiques. Les transformations sont réapprises dans chaque fold. Trois candidats et trois folds nécessitent neuf apprentissages. Les secondes mesurées dépendent de l’ordinateur. Une victoire locale concerne ces configurations, ces données et ce protocole. Elle ne classe pas universellement les familles de modèles.
+
+## Choisir puis contrôler (34 et 36)
+
+Nous enregistrons le gagnant de la moyenne CV dans selection.json avant de consulter va. Nous réapprenons ensuite sur tout tr et mesurons sur va. Si nous utilisons ce contrôle pour changer les paramètres, il participe à nos choix. Il ne peut plus être présenté comme une évaluation finale indépendante.
+
+## Décrire les erreurs (38)
+
+Le seuil 0.5 illustre les erreurs du modèle retenu sur va. Une fraude sous le seuil est manquée et un paiement normal au-dessus produit une fausse alerte. Un bon classement AUC peut coexister avec un faible rappel à ce seuil. Les chiffres de cette cellule ne se comparent pas directement à ceux des anciens OOF : la configuration et les observations évaluées diffèrent.
+
+## Produire le fichier de compétition (40)
+
+Le modèle choisi réapprend sur un échantillon stratifié du train officiel, limité à LIMIT pour cette version CPU. Il prédit ensuite tout le test officiel. Cette étape peut réutiliser des lignes auparavant dans va, après le choix fixé. Va ne mesure donc pas indépendamment ce modèle réappris. Aucun label du test officiel n’entre dans le calcul.
+
+Nous gardons les scores continus pour la ROC-AUC. Un seuil écrase leur ordre en deux classes. Les assertions contrôlent colonnes, taille, ordre des IDs, unicité et nombres finis compris entre zéro et un. Le fichier possède autant de lignes que le test officiel. Ces contrôles vérifient le format, pas la qualité du modèle. La cellule ne transmet rien à Kaggle.
+
+## Déposer et apprendre du retour (42)
+
+Après lecture des règles et des modalités affichées, le dépôt manuel utilise le fichier submission.csv du dossier annoncé. Sa description indique modèle, paramètres, taille du train et protocole. Le score public reste None jusqu’au retour effectif de Kaggle. Le journal relie ensuite ce score à l’expérience. Le résultat local ne permet pas de déduire le score public.
+
+Les ensembles évalués, le réapprentissage et la sélection répétée peuvent contribuer à des écarts entre validation locale et classement. Nous examinons d’abord le bon fichier et le protocole. Nous évitons de transformer les dépôts successifs en recherche aveugle sur le score public. Chaque expérience suivante formule une hypothèse et modifie une chose identifiable.
+
+## Budget de calcul
+
+Quatre réglages sur cinq folds demandent vingt apprentissages. À trente secondes par apprentissage, cela représente dix minutes séquentielles avant les frais supplémentaires. Un GPU n’accélère pas automatiquement le code scikit-learn. Nous réduisons d’abord le nombre d’essais ou le volume pour explorer, puis vérifions la configuration retenue sur un protocole adapté au volume supérieur.
+
+Sources : [compétition](https://www.kaggle.com/competitions/playground-series-s6e11), [ROC-AUC](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html), [validation croisée](https://scikit-learn.org/stable/modules/cross_validation.html), [boosting](https://scikit-learn.org/stable/modules/ensemble.html).
