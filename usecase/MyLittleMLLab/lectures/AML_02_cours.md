@@ -121,3 +121,18 @@ Les ensembles évalués, le réapprentissage et la sélection répétée peuvent
 Quatre réglages sur cinq folds demandent vingt apprentissages. À trente secondes par apprentissage, cela représente dix minutes séquentielles avant les frais supplémentaires. Un GPU n’accélère pas automatiquement le code scikit-learn. Nous réduisons d’abord le nombre d’essais ou le volume pour explorer, puis vérifions la configuration retenue sur un protocole adapté au volume supérieur.
 
 Sources : [compétition](https://www.kaggle.com/competitions/playground-series-s6e11), [ROC-AUC](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html), [validation croisée](https://scikit-learn.org/stable/modules/cross_validation.html), [boosting](https://scikit-learn.org/stable/modules/ensemble.html).
+
+
+## La recette et ce qu’elle ajoute à J1
+
+Le notebook J1 construisait un premier essai et examinait ses erreurs sur une séparation locale. Il amorçait aussi un réglage de C. J2 reprend les mêmes données et outils, renforce les contrôles, compare sur plusieurs folds puis produit un fichier destiné au test officiel. Le progrès concerne la méthode et les preuves. Une différence d’AUC entre une validation locale et une moyenne de folds ne démontre pas, à elle seule, une amélioration du modèle.
+
+1. Comprendre : ligne, cible, métrique et format de sortie.
+2. Verrouiller le protocole : séparation, sources, temps et préparation dans le bon ensemble.
+3. Mesurer la référence constante sur le protocole choisi.
+4. Comparer : mêmes données et folds, valeurs par fold, moyenne, limites et coût.
+5. Choisir et contrôler : enregistrer le choix puis consulter va.
+6. Soumettre : réapprendre la configuration fixée, prédire tout le test et contrôler le fichier avant dépôt manuel.
+7. Améliorer : relier le retour réel au journal et décider d’une prochaine hypothèse testable.
+
+La cellule 32 mesure référence et candidats dans le même tournoi. Nous interprétons d’abord la référence avant les candidats. L’ordre des cellules du guide permet de suivre la recette sans modifier leurs positions physiques.

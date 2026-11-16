@@ -33,19 +33,25 @@ Extrayez entièrement le ZIP. Il contient les fichiers de J1 et de J2, le code `
 
 Les numéros comptent toutes les cellules du fichier, textes compris. Ils ne désignent pas les compteurs `In [n]`. Le professeur annonce la cellule avant chaque démonstration. Certaines cellules de fin sont utilisées plus tôt dans le cours : c’est indiqué dans le PowerPoint.
 
-| Cellule | Travail | Dépend de |
+| Cellule | Étape de la recette et travail | Dépend de |
 |---|---|---|
-| 5 | Préparer les fichiers et les outils | Installation J1 et données |
-| 7 | Repérer des groupes partagés | 5 |
-| 24 | Vérifier GroupKFold sur le mini-tableau | 7 |
-| 26 | Vérifier quand une cible est connue | 5 |
-| 10 | Auditer le vrai train local et créer le dossier de preuves | 5 |
-| 22 | Montrer la fuite dans une moyenne | 5 |
-| 13 | Calculer les scores des folds et les prédictions OOF | 10 |
-| 16 | Comparer des seuils avec les mêmes scores OOF | 13 |
-| 28 | Comparer deux valeurs de C sur les mêmes folds | 13 et 10 |
-| 30 | Montrer pourquoi copier la réponse invalide le score | 13 |
-| 19 | Enregistrer et expliquer les preuves du socle | 13 et 16 |
+| 5 | Comprendre : préparer les données et outils | Installation J1 et données |
+| 7 | Protocole : repérer les groupes partagés | 5 |
+| 24 | Protocole : contrôler GroupKFold | 7 |
+| 26 | Protocole : vérifier la disponibilité de la cible | 5 |
+| 10 | Protocole : auditer tr/va et créer les preuves | 5 |
+| 22 | Protocole : comprendre la préparation sans fuite | 5 |
+| 13 | Protocole : calculer folds et OOF | 10 |
+| 30 | Protocole : reconnaître un score parfait invalide | 13 |
+| 32 | Référence puis comparaison : tournoi de trois candidats | 13 |
+| 28 | Comparer deux valeurs de C sur les mêmes folds | 13, 10 |
+| 16 | Comparer des règles d’alerte sur les mêmes OOF | 13 |
+| 19 | Enregistrer les preuves du socle | 13, 16 |
+| 34 | Choisir et enregistrer avant contrôle local | 32 |
+| 36 | Contrôler sur va le modèle retenu | 34 |
+| 38 | Interpréter les erreurs au seuil 0,5 | 36 |
+| 40 | Soumettre : fabriquer et contrôler le CSV local | 36 |
+| 42 | Améliorer : journal et score public réellement reçu | 40 |
 
 La validation croisée porte sur le train local `tr`. La validation locale `va` reste en dehors de ces entraînements et prédictions OOF. Le test officiel Kaggle ne sert pas à calculer nos métriques locales. Après le choix du modèle, la cellule 40 produit ses prédictions pour préparer une soumission.
 
@@ -66,7 +72,7 @@ Ne modifiez pas dix lignes au hasard. Montrez le message au professeur. Les capt
 
 ## Atelier de compétition Kaggle
 
-Récupérez la version enrichie du notebook : elle contient **42 cellules**, textes compris. L’environnement de J1 suffit. Après le socle et la cellule 19, nous avançons ensemble :
+Récupérez la version enrichie du notebook : elle contient **42 cellules**, textes compris. L’environnement de J1 suffit. Les cellules de compétition interviennent aux étapes 3 à 7. Suivez l’ordre de la recette ci-dessus, au signal du professeur :
 
 | Cellule | Travail | Dépend de |
 |---|---|---|
@@ -82,3 +88,9 @@ La cellule 32 effectue neuf apprentissages. La cellule 40 réapprend sur un éch
 Les fichiers restent sur votre ordinateur. Le dépôt sur [Kaggle](https://www.kaggle.com/competitions/playground-series-s6e11) est manuel, après lecture des règles, des modalités d’équipe et de la page Evaluation. Cette compétition utilise des scores continus de fraude. Le journal conserve `None` tant qu’aucun score public réel n’a été reçu.
 
 Le dossier `runs/j2_…` conserve aussi comparaison_modeles.csv, selection.json, controle_validation.json, audit_validation.csv et journal_kaggle.csv. Le CSV de soumission et release.json se trouvent dans le dossier `runs/submission_fraud_…` affiché par la cellule 40.
+
+## Progression J1 / J2
+
+J1 a établi un premier essai avec une validation locale, une référence constante, une logistique et un complément sur C. J2 reprend ce travail avec des audits, trois folds, une comparaison commune, un choix enregistré puis un CSV de compétition. La comparaison de scores issus d’évaluations différentes ne démontre pas seule un gain de modèle.
+
+La recette comporte sept étapes : comprendre, verrouiller le protocole, mesurer la référence, comparer, choisir et contrôler, soumettre, améliorer. Chaque étape se termine en montrant une preuve et en expliquant sa limite.
