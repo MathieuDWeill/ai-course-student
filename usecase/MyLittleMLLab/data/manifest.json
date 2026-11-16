@@ -1,0 +1,18 @@
+{
+  "digits": {
+    "source": "sklearn.datasets.load_digits : UCI Optical Recognition of Handwritten Digits, copie 8x8 fournie par scikit-learn",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html",
+    "note": "Benchmark de développement, pas une compétition active ni une preuve de performance industrielle. Split aléatoire stratifié pédagogique : identités des scripteurs indisponibles ici, indépendance entre personnes non garantie."
+  },
+  "reviews": {
+    "source": "Textes artificiels originaux créés pour ce cours, en anglais",
+    "note": "Gabarits répétitifs et très petit corpus : score artificiellement facile, pas une preuve de qualité sur des avis réels. Split par film ; cela ne supprime pas le partage de gabarits."
+  },
+  "files": {
+    "valid.csv": "25b89714a3d0f230562b2c2049057a5701734c008326da3b25286a114ca2b907",
+    "test.csv": "a461ed262eff870122f36366b1ed204e5344558f89cfabe0305e6d36a7a4d567",
+    "reviews_valid.csv": "19e01b808f46e18093265ec68611e018d758f7be1fa978d51c89e88d98843d8a",
+    "reviews_train.csv": "3a55bae4c395b448dc1760e91891d8ff9b1f2d203a0eb3b3c3e5a2c5b0599aaf",
+    "train.csv": "a63c86415a32a960875898c2d60fc801ff9f09f9ad4940e643317976ef52820c"
+  }
+}

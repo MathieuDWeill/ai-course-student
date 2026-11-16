@@ -1,0 +1,97 @@
+sample_id,film_id,text,target
+0,0,Film 0: The acting is wooden and the story is dull. The setting is a city.,0
+1,0,Film 0: I disliked this film and would not recommend it. The setting is a city.,0
+2,0,Film 0: A confusing script with a disappointing ending. The setting is a city.,0
+3,0,Film 0: The characters are forgettable and the pacing fails. The setting is a city.,0
+4,0,Film 0: The acting is excellent and the story is moving. The setting is a city.,1
+5,0,Film 0: I enjoyed this film and would recommend it. The setting is a city.,1
+6,0,Film 0: A thoughtful script with a satisfying ending. The setting is a city.,1
+7,0,Film 0: The characters are memorable and the pacing works. The setting is a city.,1
+8,1,Film 1: The acting is wooden and the story is dull. The setting is a village.,0
+9,1,Film 1: I disliked this film and would not recommend it. The setting is a village.,0
+10,1,Film 1: A confusing script with a disappointing ending. The setting is a village.,0
+11,1,Film 1: The characters are forgettable and the pacing fails. The setting is a village.,0
+12,1,Film 1: The acting is excellent and the story is moving. The setting is a village.,1
+13,1,Film 1: I enjoyed this film and would recommend it. The setting is a village.,1
+14,1,Film 1: A thoughtful script with a satisfying ending. The setting is a village.,1
+15,1,Film 1: The characters are memorable and the pacing works. The setting is a village.,1
+16,2,Film 2: The acting is wooden and the story is dull. The setting is a station.,0
+17,2,Film 2: I disliked this film and would not recommend it. The setting is a station.,0
+18,2,Film 2: A confusing script with a disappointing ending. The setting is a station.,0
+19,2,Film 2: The characters are forgettable and the pacing fails. The setting is a station.,0
+20,2,Film 2: The acting is excellent and the story is moving. The setting is a station.,1
+21,2,Film 2: I enjoyed this film and would recommend it. The setting is a station.,1
+22,2,Film 2: A thoughtful script with a satisfying ending. The setting is a station.,1
+23,2,Film 2: The characters are memorable and the pacing works. The setting is a station.,1
+24,3,Film 3: The acting is wooden and the story is dull. The setting is a city.,0
+25,3,Film 3: I disliked this film and would not recommend it. The setting is a city.,0
+26,3,Film 3: A confusing script with a disappointing ending. The setting is a city.,0
+27,3,Film 3: The characters are forgettable and the pacing fails. The setting is a city.,0
+28,3,Film 3: The acting is excellent and the story is moving. The setting is a city.,1
+29,3,Film 3: I enjoyed this film and would recommend it. The setting is a city.,1
+30,3,Film 3: A thoughtful script with a satisfying ending. The setting is a city.,1
+31,3,Film 3: The characters are memorable and the pacing works. The setting is a city.,1
+32,4,Film 4: The acting is wooden and the story is dull. The setting is a village.,0
+33,4,Film 4: I disliked this film and would not recommend it. The setting is a village.,0
+34,4,Film 4: A confusing script with a disappointing ending. The setting is a village.,0
+35,4,Film 4: The characters are forgettable and the pacing fails. The setting is a village.,0
+36,4,Film 4: The acting is excellent and the story is moving. The setting is a village.,1
+37,4,Film 4: I enjoyed this film and would recommend it. The setting is a village.,1
+38,4,Film 4: A thoughtful script with a satisfying ending. The setting is a village.,1
+39,4,Film 4: The characters are memorable and the pacing works. The setting is a village.,1
+40,5,Film 5: The acting is wooden and the story is dull. The setting is a station.,0
+41,5,Film 5: I disliked this film and would not recommend it. The setting is a station.,0
+42,5,Film 5: A confusing script with a disappointing ending. The setting is a station.,0
+43,5,Film 5: The characters are forgettable and the pacing fails. The setting is a station.,0
+44,5,Film 5: The acting is excellent and the story is moving. The setting is a station.,1
+45,5,Film 5: I enjoyed this film and would recommend it. The setting is a station.,1
+46,5,Film 5: A thoughtful script with a satisfying ending. The setting is a station.,1
+47,5,Film 5: The characters are memorable and the pacing works. The setting is a station.,1
+48,6,Film 6: The acting is wooden and the story is dull. The setting is a city.,0
+49,6,Film 6: I disliked this film and would not recommend it. The setting is a city.,0
+50,6,Film 6: A confusing script with a disappointing ending. The setting is a city.,0
+51,6,Film 6: The characters are forgettable and the pacing fails. The setting is a city.,0
+52,6,Film 6: The acting is excellent and the story is moving. The setting is a city.,1
+53,6,Film 6: I enjoyed this film and would recommend it. The setting is a city.,1
+54,6,Film 6: A thoughtful script with a satisfying ending. The setting is a city.,1
+55,6,Film 6: The characters are memorable and the pacing works. The setting is a city.,1
+56,7,Film 7: The acting is wooden and the story is dull. The setting is a village.,0
+57,7,Film 7: I disliked this film and would not recommend it. The setting is a village.,0
+58,7,Film 7: A confusing script with a disappointing ending. The setting is a village.,0
+59,7,Film 7: The characters are forgettable and the pacing fails. The setting is a village.,0
+60,7,Film 7: The acting is excellent and the story is moving. The setting is a village.,1
+61,7,Film 7: I enjoyed this film and would recommend it. The setting is a village.,1
+62,7,Film 7: A thoughtful script with a satisfying ending. The setting is a village.,1
+63,7,Film 7: The characters are memorable and the pacing works. The setting is a village.,1
+64,8,Film 8: The acting is wooden and the story is dull. The setting is a station.,0
+65,8,Film 8: I disliked this film and would not recommend it. The setting is a station.,0
+66,8,Film 8: A confusing script with a disappointing ending. The setting is a station.,0
+67,8,Film 8: The characters are forgettable and the pacing fails. The setting is a station.,0
+68,8,Film 8: The acting is excellent and the story is moving. The setting is a station.,1
+69,8,Film 8: I enjoyed this film and would recommend it. The setting is a station.,1
+70,8,Film 8: A thoughtful script with a satisfying ending. The setting is a station.,1
+71,8,Film 8: The characters are memorable and the pacing works. The setting is a station.,1
+72,9,Film 9: The acting is wooden and the story is dull. The setting is a city.,0
+73,9,Film 9: I disliked this film and would not recommend it. The setting is a city.,0
+74,9,Film 9: A confusing script with a disappointing ending. The setting is a city.,0
+75,9,Film 9: The characters are forgettable and the pacing fails. The setting is a city.,0
+76,9,Film 9: The acting is excellent and the story is moving. The setting is a city.,1
+77,9,Film 9: I enjoyed this film and would recommend it. The setting is a city.,1
+78,9,Film 9: A thoughtful script with a satisfying ending. The setting is a city.,1
+79,9,Film 9: The characters are memorable and the pacing works. The setting is a city.,1
+80,10,Film 10: The acting is wooden and the story is dull. The setting is a village.,0
+81,10,Film 10: I disliked this film and would not recommend it. The setting is a village.,0
+82,10,Film 10: A confusing script with a disappointing ending. The setting is a village.,0
+83,10,Film 10: The characters are forgettable and the pacing fails. The setting is a village.,0
+84,10,Film 10: The acting is excellent and the story is moving. The setting is a village.,1
+85,10,Film 10: I enjoyed this film and would recommend it. The setting is a village.,1
+86,10,Film 10: A thoughtful script with a satisfying ending. The setting is a village.,1
+87,10,Film 10: The characters are memorable and the pacing works. The setting is a village.,1
+88,11,Film 11: The acting is wooden and the story is dull. The setting is a station.,0
+89,11,Film 11: I disliked this film and would not recommend it. The setting is a station.,0
+90,11,Film 11: A confusing script with a disappointing ending. The setting is a station.,0
+91,11,Film 11: The characters are forgettable and the pacing fails. The setting is a station.,0
+92,11,Film 11: The acting is excellent and the story is moving. The setting is a station.,1
+93,11,Film 11: I enjoyed this film and would recommend it. The setting is a station.,1
+94,11,Film 11: A thoughtful script with a satisfying ending. The setting is a station.,1
+95,11,Film 11: The characters are memorable and the pacing works. The setting is a station.,1

@@ -1,0 +1,9 @@
+{
+  "name": "linear",
+  "hypothesis": "Une séparation linéaire régularisée peut améliorer la baseline.",
+  "model": "logistic",
+  "seed": 2026,
+  "params": {
+    "C": 1.0
+  }
+}

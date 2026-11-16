@@ -1,0 +1,10 @@
+numpy>=1.26,<3
+pandas>=2.2,<4
+scikit-learn>=1.5,<2
+matplotlib>=3.8,<4
+nbformat>=5.9,<6
+nbclient>=0.10,<1
+ipykernel>=6,<8
+jupyterlab>=4,<5
+pytest>=8,<10
+psutil>=5.9,<8

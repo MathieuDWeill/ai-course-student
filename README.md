@@ -8,6 +8,16 @@ Le fil directeur reste simple :
 
 Le cours apprend à poser une question, comprendre le grain des données, vérifier les jointures, produire une analyse, puis transformer le résultat en décision fiable.
 
+## ML avancé — J1 (16 novembre)
+
+**[Démarrage MyLittleMLLab : installation Windows/Mac et données](usecase/MyLittleMLLab/README.md)**
+
+- [Télécharger le kit J1 complet (ZIP)](kits/MyLittleMLLab_J1.zip?raw=true)
+- [Notebook du jour : AML_01_atelier.ipynb](usecase/MyLittleMLLab/notebooks/AML_01_atelier.ipynb)
+- [Fiche de séance](usecase/MyLittleMLLab/fiches/AML_01.md) et [cours rédigé](usecase/MyLittleMLLab/lectures/AML_01_cours.md)
+
+Téléchargez le kit complet puis suivez son README. Le notebook seul ne contient pas le code du laboratoire. Les CSV de fraude se récupèrent depuis Kaggle avec votre compte, selon la procédure du guide.
+
 ## Démarrage étudiant
 
 Option recommandée : cliquez sur **Use this template** ou **Fork** sur GitHub, puis clonez votre propre copie.

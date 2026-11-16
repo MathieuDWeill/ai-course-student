@@ -1,0 +1,25 @@
+sample_id,film_id,text,target
+96,12,Film 12: The acting is wooden and the story is dull. The setting is a city.,0
+97,12,Film 12: I disliked this film and would not recommend it. The setting is a city.,0
+98,12,Film 12: A confusing script with a disappointing ending. The setting is a city.,0
+99,12,Film 12: The characters are forgettable and the pacing fails. The setting is a city.,0
+100,12,Film 12: The acting is excellent and the story is moving. The setting is a city.,1
+101,12,Film 12: I enjoyed this film and would recommend it. The setting is a city.,1
+102,12,Film 12: A thoughtful script with a satisfying ending. The setting is a city.,1
+103,12,Film 12: The characters are memorable and the pacing works. The setting is a city.,1
+104,13,Film 13: The acting is wooden and the story is dull. The setting is a village.,0
+105,13,Film 13: I disliked this film and would not recommend it. The setting is a village.,0
+106,13,Film 13: A confusing script with a disappointing ending. The setting is a village.,0
+107,13,Film 13: The characters are forgettable and the pacing fails. The setting is a village.,0
+108,13,Film 13: The acting is excellent and the story is moving. The setting is a village.,1
+109,13,Film 13: I enjoyed this film and would recommend it. The setting is a village.,1
+110,13,Film 13: A thoughtful script with a satisfying ending. The setting is a village.,1
+111,13,Film 13: The characters are memorable and the pacing works. The setting is a village.,1
+112,14,Film 14: The acting is wooden and the story is dull. The setting is a station.,0
+113,14,Film 14: I disliked this film and would not recommend it. The setting is a station.,0
+114,14,Film 14: A confusing script with a disappointing ending. The setting is a station.,0
+115,14,Film 14: The characters are forgettable and the pacing fails. The setting is a station.,0
+116,14,Film 14: The acting is excellent and the story is moving. The setting is a station.,1
+117,14,Film 14: I enjoyed this film and would recommend it. The setting is a station.,1
+118,14,Film 14: A thoughtful script with a satisfying ending. The setting is a station.,1
+119,14,Film 14: The characters are memorable and the pacing works. The setting is a station.,1

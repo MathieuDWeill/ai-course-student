@@ -1,0 +1,8 @@
+.venv*/
+runs/
+cache/
+__pycache__/
+.ipynb_checkpoints/
+*.zip
+data/competitions/
+catboost_info/

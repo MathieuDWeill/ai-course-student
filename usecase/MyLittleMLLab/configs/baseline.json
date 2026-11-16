@@ -1,0 +1,7 @@
+{
+  "name": "baseline",
+  "hypothesis": "Mesurer le score sans exploiter les pixels.",
+  "model": "dummy",
+  "seed": 2026,
+  "params": {}
+}
