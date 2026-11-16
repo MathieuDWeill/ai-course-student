@@ -18,3 +18,7 @@ Pour les matchs, utiliser un découpage chronologique.
 ## Atelier complémentaire
 
 - [Atelier StatQuest — biais, variance et audit des modèles](ESEO_Atelier_StatQuest_Biais_Variance_Audit_Modeles.pptx).
+
+## ML avancé — J1
+
+- [Cours étudiant J1 (PDF)](ML_Avance_J1_Etudiant.pdf) : 69 diapositives, captures et complément sur la régularisation, sans notes professeur.
