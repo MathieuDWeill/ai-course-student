@@ -1,5 +1,11 @@
 # Démarrer J3
 
+## Version à utiliser pour la séance
+
+Télécharger à nouveau **AML_03_atelier.ipynb**, placer le fichier dans notebooks et redémarrer le noyau. Cette version ajoute des étapes guidées : les anciens numéros de cellules ne correspondent plus. Le PowerPoint Classe et le cours rédigé utilisent les nouveaux repères ci-dessous.
+
+[Feuille des exercices accompagnés](EXERCICES_J3.md). Les exercices commencent par un exemple résolu, continuent par une réponse intermédiaire vérifiée, puis une correction collective.
+
 ## Si vous avez commencé avec le ZIP J1
 
 1. Fermer le notebook précédent après l’avoir enregistré.
@@ -18,7 +24,7 @@ Le [kit de mise à jour J3/J4](https://github.com/MathieuDWeill/ai-course-studen
 - Redémarrage : relancer les cellules précédentes dans l’ordre. Les variables d’un ancien notebook ne sont pas partagées automatiquement.
 - Machine lente : garder le calcul sur CPU et les limites proposées ; ne pas lancer plusieurs recherches en parallèle. Utiliser les sorties projetées pendant un dépannage.
 
-Sur un Mac Intel ou une architecture qui ne dispose pas de roue PyTorch compatible, utiliser la variante Kaggle sur CPU. Ne pas changer les versions de toutes les bibliothèques au hasard pendant le cours.
+Sur un Mac Intel ou une architecture sans roue PyTorch compatible, utiliser la variante Kaggle CPU.
 
 ## Le même atelier sur Kaggle
 
@@ -29,3 +35,23 @@ Le notebook adapte les chemins, conserve le même budget et écrit les fichiers 
 ## À conserver
 
 Le dossier runs/J3 contient les tableaux, les prédictions et le manifeste. Compléter le journal : hypothèse, preuve, décision, prochaine expérience. Le score public reste inconnu avant un dépôt réel. Le contrôle local déjà vu en J2 est un contrôle de développement, pas un test indépendant supplémentaire.
+
+## Repères du notebook local
+
+- Cellule 3 : Le contrat et le budget.
+- Cellule 5 : Lire une règle et calculer Gini.
+- Cellule 7 : Profondeur et mémorisation.
+- Cellule 9 : Bootstrap et moyenne de forêt.
+- Cellule 11 : Construire trois étapes de boosting.
+- Cellule 13 : Les familles et les catégories.
+- Cellule 15 : Le tournoi initial.
+- Cellule 17 : Une expérience de représentation.
+- Cellule 19 : Une recherche bornée.
+- Cellule 21 : La décision arrêtée avant le contrôle.
+- Cellule 23 : L’importance par permutation.
+- Cellule 25 : L’audit des sous-groupes.
+- Cellule 27 : Le candidat et le CSV Kaggle.
+- Cellule 29 : Le journal et la décision.
+- Cellule 31 : La vérification finale.
+
+[Glossaire des mots et des calculs du laboratoire](GLOSSAIRE_ML_AVANCE.md).

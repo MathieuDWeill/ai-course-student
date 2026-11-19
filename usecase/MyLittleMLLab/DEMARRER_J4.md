@@ -1,5 +1,11 @@
 # Démarrer J4
 
+## Version à utiliser pour la séance
+
+Télécharger à nouveau **AML_04_atelier.ipynb**, placer le fichier dans notebooks et redémarrer le noyau. Cette version ajoute des étapes guidées : les anciens numéros de cellules ne correspondent plus. Le PowerPoint Classe et le cours rédigé utilisent les nouveaux repères ci-dessous.
+
+[Feuille des exercices accompagnés](EXERCICES_J4.md). Les exercices commencent par un exemple résolu, continuent par une réponse intermédiaire vérifiée, puis une correction collective.
+
 ## Si vous avez commencé avec le ZIP J1
 
 1. Fermer le notebook précédent après l’avoir enregistré.
@@ -18,7 +24,7 @@ Le [kit de mise à jour J3/J4](https://github.com/MathieuDWeill/ai-course-studen
 - Redémarrage : relancer les cellules précédentes dans l’ordre. Les variables d’un ancien notebook ne sont pas partagées automatiquement.
 - Machine lente : garder le calcul sur CPU et les limites proposées ; ne pas lancer plusieurs recherches en parallèle. Utiliser les sorties projetées pendant un dépannage.
 
-Sur un Mac Intel ou une architecture qui ne dispose pas de roue PyTorch compatible, utiliser la variante Kaggle sur CPU. Ne pas changer les versions de toutes les bibliothèques au hasard pendant le cours.
+Sur un Mac Intel ou une architecture sans roue PyTorch compatible, utiliser la variante Kaggle CPU.
 
 ## Le même atelier sur Kaggle
 
@@ -29,3 +35,26 @@ Le notebook adapte les chemins, conserve le même budget et écrit les fichiers 
 ## À conserver
 
 Le dossier runs/J4 contient les tableaux, les prédictions et le manifeste. Compléter le journal : hypothèse, preuve, décision, prochaine expérience. Le score public reste inconnu avant un dépôt réel. Le contrôle local déjà vu en J2 est un contrôle de développement, pas un test indépendant supplémentaire.
+
+## Repères du notebook local
+
+- Cellule 3 : Le contrat et les ressources.
+- Cellule 5 : Un poids et deux tailles de pas.
+- Cellule 7 : Les rôles de backward et step.
+- Cellule 9 : Un batch visible, une couche visible.
+- Cellule 11 : Logits, softmax et cross-entropy.
+- Cellule 13 : Les gradients de chaque poids.
+- Cellule 15 : Pourquoi ajouter une non-linéarité.
+- Cellule 17 : Les transformations numériques.
+- Cellule 19 : Les dimensions et la référence constante.
+- Cellule 21 : La boucle tabulaire complète.
+- Cellule 23 : Les courbes sur un fold.
+- Cellule 25 : train, eval et no_grad.
+- Cellule 27 : Deux learning rates, trois folds.
+- Cellule 29 : Un early stopping explicite.
+- Cellule 31 : Le contrôle après le choix.
+- Cellule 33 : Exporter un candidat complet.
+- Cellule 35 : Vérifier le retour des artefacts.
+- Cellule 37 : Le journal et la décision.
+
+[Glossaire des mots et des calculs du laboratoire](GLOSSAIRE_ML_AVANCE.md).

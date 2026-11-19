@@ -16,6 +16,8 @@ Le cours apprend à poser une question, comprendre le grain des données, vérif
 
 Conservez l’installation et les données. Ajoutez les notebooks ; aucune nouvelle bibliothèque en J3. Installez PyTorch avant J4 ou utilisez la variante Kaggle sur CPU.
 
+Parcours renforcé : exemples résolus et [exercices J3](usecase/MyLittleMLLab/EXERCICES_J3.md) / [exercices J4](usecase/MyLittleMLLab/EXERCICES_J4.md). Télécharger la nouvelle version des ateliers avant la séance : leurs numéros de cellules ont changé.
+
 ## ML avancé — J2 : évaluer sans fuite
 
 **[Commencer J2](usecase/MyLittleMLLab/DEMARRER_J2.md)** · [Notebook AML_02](usecase/MyLittleMLLab/notebooks/AML_02_atelier.ipynb) · [Kit complet J2](kits/MyLittleMLLab_J2.zip?raw=true)

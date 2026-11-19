@@ -1,155 +1,203 @@
 # ML avancé — J3
 
-## 1. Le contrat de J3
+Question du laboratoire : classer les paiements selon leur risque de fraude.
 
-J1 : produire une première prédiction. J2 : comparer sans changer les règles. J3 : justifier la complexité et le budget.
+Ce cours accompagne AML_03_atelier et la feuille EXERCICES_J3. Les résultats de calcul sont locaux. Le contrôle déjà consulté en J2 reste un contrôle de développement.
 
-Notre question reste le classement des paiements selon le risque de fraude. Nous disposons des mêmes observations étiquetées et de trois folds fixés. Nous allons comparer plusieurs familles, puis trois réglages d’un même algorithme. Une bonne expérience conserve les données et la métrique, annonce ce qui change et mesure aussi le temps. Le contrôle local a déjà été consulté : nous ne pouvons plus le présenter comme une évaluation finale indépendante.
+## J1 et J2 · Ce que nous savons déjà faire
 
-### Exemple résolu
+J1 : données, référence constante, logistique, premier score et run sauvegardé.
 
-Une AUC de 0,93 mesure un classement relatif entre positifs et négatifs. Elle ne signifie ni 93 % de fraudes trouvées ni une probabilité calibrée. Pour agir, il faudrait ensuite choisir un seuil et examiner les erreurs.
+J2 : contrôle des fuites, mêmes folds, seuils, erreurs et CSV officiel.
 
-### Vérifier sa compréhension
+Le contrôle local déjà consulté reste un diagnostic de développement.
 
-Un modèle gagne 0,01 d’AUC, mais ses lignes de validation ont changé. Peut-on attribuer le gain au modèle ?
+## L’évolution de notre méthode
 
-**Réponse expliquée :** Non. La difficulté des lignes a aussi changé. Il faut comparer les candidats sur les mêmes folds.
+Nous conservons la question et nous renforçons la méthode.
 
-Les modèles, leur encodage et leurs hyperparamètres peuvent changer. Les observations, les folds, la métrique et le budget annoncé restent contrôlés. Un PC plus lent peut donner un autre temps ; il faut donc comparer les durées sur la même machine.
+|Étape|Question principale|Preuve attendue|
+|---|---|---|
+|J1|La boucle fonctionne-t-elle ?|Référence, score local, run|
+|J2|La comparaison est-elle fiable ?|Folds fixes, contrôle des fuites|
+|J3|Quelle complexité est utile ?|Ablation, AUC, coût, budget|
+|J4|Comment le réseau apprend-il ?|Gradients, courbes, même CV|
 
-### Passage au notebook
+## Les sept étapes de la journée
 
-Cellule physique 3. Ouvrir AML_03_atelier.ipynb dans le dossier notebooks existant. Exécuter seulement la cellule 3. Retrouver les 15 000 lignes train, les trois folds et le contrôle local. Expliquer à son voisin ce qui peut changer aujourd’hui et ce qui reste fixé.
+Les durées comprennent explications, démonstrations et corrections. Les pauses s’ajoutent au temps pédagogique.
 
-## 2. Une règle, une branche, une feuille
+|Bloc|Travail|Minutes|
+|---|---|---|
+|1|Le contrat et les acquis|45|
+|2|Arbre et forêt au tableau|70|
+|3|Le boosting étape par étape|60|
+|4|L’enquête sur les variables|75|
+|5|Recherche et décision|60|
+|6|Interprétation et audit|55|
+|7|Boucle Kaggle et bilan|55|
 
-Un arbre transforme une succession de questions en une prédiction.
+## Le même laboratoire, la bonne version
 
-Un nœud pose une question sur une variable. Une branche correspond à une réponse. Une feuille termine le chemin. Pour une classification binaire simple, la probabilité de fraude dans une feuille est la proportion de fraudes parmi les exemples d’apprentissage arrivés dans cette feuille. L’algorithme apprend les seuils à partir du train. Nous imposons d’abord un seuil pour calculer à la main, puis nous laissons le logiciel choisir selon son propre critère.
+Ajouter le notebook du jour dans notebooks et conserver mllab, data et l’environnement.
 
-### Exemple résolu
+Ouvrir la version renforcée et redémarrer le noyau. Les numéros de cellules ont changé.
 
-Montants : 10, 20, 30, 40, 50, 60. Classes : 0, 0, 1, 0, 1, 1. Avec la règle montant ≤ 35, la feuille gauche contient une fraude sur trois : 1/3. La droite contient deux fraudes sur trois : 2/3. Un montant de 25 reçoit donc 1/3 dans cet arbre illustratif.
+J3 : aucune nouvelle bibliothèque.
 
-### Vérifier sa compréhension
+## Un arbre pose des questions
 
-Pourquoi le logiciel peut-il choisir 25 ou 45 au lieu du seuil 35 dessiné au tableau ?
+Nœud : une question sur une variable.
+Branche : une réponse.
+Feuille : un groupe d’exemples et une prédiction.
 
-**Réponse expliquée :** Il cherche un seuil qui réduit son critère d’impureté. Notre seuil 35 explique le mécanisme ; il n’est pas une consigne optimale.
+## Exercice résolu · Les six montants
 
-Le critère de Gini d’une feuille est 1 − somme des proportions au carré. À 35, l’impureté pondérée vaut 4/9. À 25 ou 45, elle vaut 1/4. Un seuil plus bas selon ce critère ne prouve pas une meilleure généralisation.
+Règle imposée : montant ≤ 35 à gauche.
+Un montant de 25 reçoit 1/3 dans cet arbre.
 
-### Passage au notebook
+|Montants|Classes|Fréquence de fraude|
+|---|---|---|
+|10, 20, 30|0, 0, 1|1/3|
+|40, 50, 60|0, 1, 1|2/3|
 
-Cellule physique 5. Dessiner les deux feuilles pour le seuil 35. Calculer les probabilités pour les montants 25 et 55. Exécuter la cellule 5 ensemble, puis lire le seuil réellement appris. Ne pas modifier les données pour forcer le résultat attendu.
+## Gini · Mesurer le mélange des classes
 
-## 3. La complexité et le surapprentissage
+Gini = 1 − p₀² − p₁²
 
-Une règle précise sur le train peut devenir fragile sur de nouvelles observations.
+Une feuille pure donne 0. Deux classes à parts égales donnent 0,5.
 
-La profondeur compte les niveaux de décisions successives. Des feuilles nombreuses et petites permettent de reproduire plus finement les réponses du train. Cette souplesse est une capacité du modèle. Elle peut aider si les relations sont réelles, ou mémoriser des accidents de l’échantillon. Un excellent score train ne permet pas de départager ces deux situations. La validation sur des observations séparées est donc indispensable.
+Le critère d’une coupure est la moyenne des Gini, pondérée par les effectifs.
 
-### Exemple résolu
+## La forêt · De l’aléa à une moyenne
 
-Sur les six montants jouets, un arbre profond peut isoler les changements de classe et atteindre une accuracy train de 1. Un arbre peu profond garde des feuilles mélangées. Nous ne disposons ici d’aucun nouvel exemple étiqueté pour affirmer lequel généralise le mieux.
+Le bootstrap tire des lignes avec remise.
+Chaque arbre peut aussi examiner un sous-ensemble de variables.
+Les probabilités des arbres sont ensuite moyennées.
 
-### Vérifier sa compréhension
+## Le boosting · Une fonction corrigée par étapes
 
-Profondeur maximale = 2 : paramètre appris ou hyperparamètre ? Et le seuil choisi par le fit ?
+Fₘ(x) = Fₘ₋₁(x) + η hₘ(x)
 
-**Réponse expliquée :** La profondeur maximale est un hyperparamètre donné avant le fit. Le seuil est un paramètre appris pendant le fit.
+F : prédiction actuelle.
+h : correction apprise.
+η : force donnée à cette correction.
 
-Limiter la profondeur ou augmenter le nombre minimal de lignes par feuille peut réduire la variance, mais aussi empêcher d’apprendre une relation utile. Nous ne cherchons pas une règle « plus petit est toujours meilleur ». Nous testons un compromis sur le même protocole.
+## Exemple · Commencer par une constante
 
-### Passage au notebook
+Quatre entrées : 1, 2, 3, 4.
+Cibles : 0, 0, 2, 2.
 
-Cellule physique 7. Avant de lancer la cellule 7, prévoir quel arbre aura le plus de feuilles. Lire ensuite le tableau, entourer un score train et écrire une phrase expliquant pourquoi ce score ne suffit pas. Proposer une comparaison honnête avec de nouvelles lignes.
+F₀ = moyenne des cibles = 1.
+Résidus : −1, −1, +1, +1.
+MSE initiale = 1.
 
-## 4. Forêt, boosting et catégories
+## De la régression à la classification
 
-Combiner des arbres peut améliorer la prédiction ; la manière de les combiner compte.
+Pour la perte quadratique, les résidus donnent la direction de correction.
 
-Une forêt entraîne des arbres avec de l’aléa dans les observations et les variables, puis combine leurs probabilités. Le boosting ajoute des étapes successives qui cherchent à réduire une perte. Ce sont deux mécanismes différents. Une catégorie telle que mobile ou desktop n’a pas nécessairement d’ordre numérique. Donner les codes 0, 1 et 2 à des catégories peut introduire des coupures arbitraires si le modèle les traite comme des quantités.
+Plus généralement, le boosting utilise le gradient négatif de la perte.
 
-### Exemple résolu
+En classification, il construit des scores que la perte relie aux probabilités.
 
-Trois arbres prédisent 0,2 ; 0,5 ; 0,8 : leur moyenne vaut 0,5. Pour les catégories A, B, C codées 0, 1, 2, une coupure à 0,5 sépare A de B et C. Un traitement catégoriel peut chercher d’autres regroupements sans imposer cet ordre.
+## Diagnostic · Un pas plus petit, un budget identique
 
-### Vérifier sa compréhension
+80 étapes à 0,03 et 80 étapes à 0,1 ne donnent pas le même chemin d’apprentissage.
 
-Ajouter cent arbres qui reproduisent tous le même défaut le supprime-t-il forcément ?
+Un pas plus petit peut stabiliser, mais aussi apprendre trop peu si les étapes restent limitées.
 
-**Réponse expliquée :** Non. Une combinaison aide notamment lorsque les erreurs diffèrent ; elle ne corrige pas automatiquement un biais partagé.
+## Catégories · Un code peut introduire un ordre
 
-Le notebook marque explicitement les colonnes catégorielles du HistGradientBoostingClassifier. Les codes de catégories inconnues deviennent des valeurs manquantes pour ce modèle. Ce traitement natif est une expérience justifiée ; il ne garantit pas un gain sur tous les jeux de données.
+Mobile = 0, desktop = 1, tablette = 2.
 
-### Passage au notebook
+Une coupure numérique traite ces codes comme ordonnés. Le traitement catégoriel cherche des regroupements de modalités.
 
-Cellule physique 9. Exécuter la cellule 9. Identifier le modèle linéaire, la forêt et les deux versions du boosting. Vérifier que les deux boosting gardent 80 étapes et 15 feuilles. Expliquer l’unique différence recherchée dans cette paire : la façon de traiter les catégories.
+Comparer avec le même boosting permet d’isoler cette représentation.
 
-## 5. Le tournoi et le coût du calcul
+## Une hypothèse sur les variables positives
 
-Un tableau commun permet de comparer le score, la dispersion et la durée.
+Montant, délai, distance et solde peuvent couvrir des échelles très étalées.
 
-Chaque candidat est entraîné sur deux folds et évalué sur le troisième, à trois reprises. Les prétraitements sont ajustés dans chaque fit grâce aux pipelines. Nous calculons la moyenne et l’écart-type des trois AUC. Cet écart-type décrit la dispersion sur ces folds ; ce n’est pas un intervalle de confiance. Le temps inclut l’exécution de cette comparaison sur la machine utilisée. Les scores train aident à repérer un écart avec la CV.
+log1p(x) = log(1 + x) compresse les grandes valeurs et accepte x = 0.
 
-### Exemple résolu
+Nous testons deux variantes : remplacer ou ajouter quatre colonnes.
 
-Quatre modèles sur trois folds donnent douze fits. Si un fit dure dix secondes, ces seuls entraînements coûtent environ deux minutes, auxquelles s’ajoutent préparation et prédiction. Utiliser tous les cœurs pour chaque recherche parallèle peut saturer une machine : ici n_jobs = 1.
+## L’ablation · Une modification à la fois
 
-### Vérifier sa compréhension
+Même C = 0,1. Mêmes trois folds.
 
-Le modèle A gagne 0,0002 d’AUC et prend dix fois plus de temps. Est-il automatiquement le bon choix ?
+Référence : variables originales.
+Essai A : quatre variables remplacées par log1p.
+Essai B : quatre colonnes log1p ajoutées.
 
-**Réponse expliquée :** Non. Il faut regarder la stabilité, le budget disponible et l’utilité du gain. Trois folds ne suffisent pas à démontrer qu’un si faible écart est robuste.
+Deux nouveaux candidats coûtent six fits.
 
-La correction s’appuie sur le tableau réellement obtenu. Si le boosting perd, ce résultat reste utile : il indique que cette configuration et cette représentation ne justifient pas encore leur coût. Nous ne modifions ni le split ni la métrique pour faire gagner un modèle préféré.
+## Le gagnant de recherche est un choix
 
-### Passage au notebook
+Les scores de CV ont servi à choisir.
 
-Cellule physique 11. Prévoir le classement sans calculer, puis lancer la cellule 11 ensemble. Lire d’abord la référence linéaire, ensuite les différences de score, de dispersion et de durée. Chaque binôme défend un candidat avec deux chiffres et une limite.
+Plus on multiplie les essais, plus on peut sélectionner une fluctuation favorable.
 
-## 6. Régler avec un budget annoncé
+Une validation déjà consultée ne redevient pas vierge après un changement de nom.
 
-Une recherche choisit des hyperparamètres ; elle consomme des fits et réutilise les scores de validation.
+## Permutation · Ce que le modèle utilise
 
-Nous annonçons trois configurations : sept feuilles avec un pas de 0,1 ; quinze feuilles avec 0,1 ; quinze feuilles avec 0,03. La première paire teste la complexité, la seconde teste la force de chaque étape. Le nombre d’étapes reste fixé à 80 : un plus petit learning rate n’est donc pas assuré d’avoir le temps d’apprendre suffisamment. Le meilleur score de recherche a servi au choix et peut être optimiste.
+Mélanger une variable casse son association avec les lignes.
+Mesurer la baisse d’AUC indique son utilité dans ce modèle et ce contexte.
 
-### Exemple résolu
+Des variables corrélées peuvent partager leur information.
 
-Trois configurations sur trois folds donnent neuf fits. Avec le tournoi précédent, le total de CV est 21 fits. Une configuration de référence est répétée volontairement dans la recherche. Le fit du candidat retenu et le refit d’export s’ajoutent à ce total.
+## L’audit des sous-groupes
 
-### Vérifier sa compréhension
+Un score global peut masquer des comportements différents selon les paiements.
 
-Peut-on essayer cent configurations, puis annoncer uniquement la meilleure AUC comme une estimation indépendante ?
+Toujours lire : effectif, nombre de fraudes, métrique et erreurs au seuil choisi.
 
-**Réponse expliquée :** Non. Le choix exploite les scores. Plus les essais sont nombreux, plus on risque de sélectionner une fluctuation favorable.
+Un petit groupe peut donner un score très instable.
 
-La cellule 15 choisit selon la CV, puis décrit le contrôle local déjà consulté depuis J2. Elle ne transforme pas ce contrôle en test vierge. Une nouvelle compétition, une nouvelle période ou un test réellement réservé serait nécessaire pour une mesure indépendante supplémentaire.
+## Le CSV officiel · Un contrat précis
 
-### Passage au notebook
+Deux colonnes : id et is_fraud.
+Une ligne par paiement test, dans le bon ordre.
+Des scores finis entre zéro et un.
 
-Cellule physique 13. Avant la cellule 13, annoncer l’effet attendu de sept feuilles au lieu de quinze. Lancer la recherche sans agrandir la grille. Construire ensuite le tableau hypothèse / résultat / décision. Exécuter la cellule 15 après avoir arrêté le choix.
+Les réponses du test officiel restent inconnues.
 
-## 7. Interpréter, exporter et décider
+## Local et Kaggle · La même expérience
 
-Un résultat Kaggle utile associe une prédiction valide à une explication traçable.
+La variante Kaggle adapte les chemins et embarque le code du laboratoire.
 
-La permutation mélange une variable sur les lignes de contrôle et mesure la baisse d’AUC. Une forte baisse suggère que le modèle utilisait cette information dans ce contexte. Ce n’est pas une preuve causale. Des variables corrélées peuvent se remplacer et partager l’importance. Nous exportons ensuite des scores continus pour tout le test officiel, dans l’ordre des identifiants du fichier exemple. Aucun dépôt n’est automatique.
+Conserver données, folds, configuration et métrique.
+Comparer les scores avant de comparer les temps.
 
-### Exemple résolu
+Les variantes ont deux cellules d’amorçage supplémentaires.
 
-Un CSV valide contient exactement id et is_fraud, une ligne par paiement test et des valeurs finies entre zéro et un. Il ne contient pas les classes seulement 0 ou 1 pour ce classement. Le manifeste conserve les empreintes des données, le modèle retenu et le budget.
+## Exemple résolu : trois corrections de boosting
 
-### Vérifier sa compréhension
+Pour les cibles 0, 0, 2, 2, la constante initiale vaut 1. Les résidus initiaux valent −1, −1, +1, +1. Un arbre sépare les deux premières entrées des deux dernières. Avec learning rate 0,5, la première correction donne 0,5 à gauche et 1,5 à droite. La MSE devient 0,25. Les nouveaux résidus valent −0,5 et +0,5. L’étape suivante donne 0,25 et 1,75, avec MSE 0,0625. La troisième donne 0,125 et 1,875, avec MSE 0,015625. La classification utilise un gradient de perte approprié : cet exemple de régression explique le mécanisme séquentiel, pas tout l’algorithme du classifieur.
 
-Une variable importante prouve-t-elle qu’en la modifiant on réduirait la fraude ?
+## Exemple résolu : une comparaison appariée
 
-**Réponse expliquée :** Non. L’importance mesure un usage prédictif du modèle. Elle peut refléter des relations indirectes ou des variables corrélées.
+Dans l’exécution de référence, remplacer quatre variables par log1p fait passer l’AUC moyenne de 0,926346 à 0,927203. Les trois deltas sont positifs, mais petits et d’amplitudes différentes : environ 0,000157, 0,000627 et 0,001787. Ajouter les colonnes donne ici 0,925001. La transformation n’est donc pas un bouton universel d’amélioration. La règle annoncée sélectionne le remplacement, mais la conclusion doit rester limitée à ce protocole. Ces chiffres ne sont pas un score public Kaggle.
 
-Le livrable attendu contient tournoi.csv, recherche.csv, importance.csv, submission_J3.csv, manifest.json et journal.json complété. Conserver le modèle simple s’il reste préférable est une conclusion acceptable. J4 ajoutera un réseau comme nouveau challenger sur le même protocole.
+## Repères exacts du notebook local
 
-### Passage au notebook
+- Cellule 3 : Le contrat et le budget.
+- Cellule 5 : Lire une règle et calculer Gini.
+- Cellule 7 : Profondeur et mémorisation.
+- Cellule 9 : Bootstrap et moyenne de forêt.
+- Cellule 11 : Construire trois étapes de boosting.
+- Cellule 13 : Les familles et les catégories.
+- Cellule 15 : Le tournoi initial.
+- Cellule 17 : Une expérience de représentation.
+- Cellule 19 : Une recherche bornée.
+- Cellule 21 : La décision arrêtée avant le contrôle.
+- Cellule 23 : L’importance par permutation.
+- Cellule 25 : L’audit des sous-groupes.
+- Cellule 27 : Le candidat et le CSV Kaggle.
+- Cellule 29 : Le journal et la décision.
+- Cellule 31 : La vérification finale.
 
-Cellule physique 17. Exécuter 17, lire trois variables et une limite. Exécuter ensuite 19 pour le CSV et 21 pour le journal. Compléter réellement le journal : hypothèse, preuve chiffrée, décision et prochaine expérience. Vérifier les règles et la possibilité actuelle de dépôt sur Kaggle.
+## Références techniques
+
+[Scikit-learn : ensembles](https://scikit-learn.org/stable/modules/ensemble.html) et [PyTorch : optimisation](https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html).

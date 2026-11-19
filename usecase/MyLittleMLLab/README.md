@@ -4,7 +4,7 @@
 
 **J4 : [guide et installation PyTorch](DEMARRER_J4.md) · [notebook AML_04](notebooks/AML_04_atelier.ipynb).**
 
-[Mise à jour J3/J4 pour le ZIP initial](../../kits/MyLittleMLLab_J3_J4_Mise_a_jour.zip?raw=true) : ajouter les notebooks en conservant environnement, données et code. Pas de git pull nécessaire.
+[Mise à jour J3/J4 pour le ZIP initial](../../kits/MyLittleMLLab_J3_J4_Mise_a_jour.zip?raw=true) : ajouter les notebooks en conservant environnement, données et code. Pas de git pull nécessaire. Les ateliers renforcés ajoutent des calculs intermédiaires et des feuilles d’exercices : télécharger leur nouvelle version, puis redémarrer le noyau.
 
 **J2 : [guide de démarrage](DEMARRER_J2.md) · [notebook AML_02](notebooks/AML_02_atelier.ipynb).**
 
