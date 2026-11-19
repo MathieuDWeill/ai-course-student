@@ -8,6 +8,14 @@ Le fil directeur reste simple :
 
 Le cours apprend à poser une question, comprendre le grain des données, vérifier les jointures, produire une analyse, puis transformer le résultat en décision fiable.
 
+## ML avancé — J3 et J4
+
+- **[J3 : arbres, ensembles et recherche bornée](usecase/MyLittleMLLab/DEMARRER_J3.md)** · [Notebook AML_03](usecase/MyLittleMLLab/notebooks/AML_03_atelier.ipynb)
+- **[J4 : comprendre et entraîner un réseau](usecase/MyLittleMLLab/DEMARRER_J4.md)** · [Notebook AML_04](usecase/MyLittleMLLab/notebooks/AML_04_atelier.ipynb)
+- [Mise à jour J3/J4 pour le ZIP initial](kits/MyLittleMLLab_J3_J4_Mise_a_jour.zip?raw=true) · [Version Kaggle J3](usecase/MyLittleMLLab/templates/KAGGLE_AML_03.ipynb) · [Version Kaggle J4](usecase/MyLittleMLLab/templates/KAGGLE_AML_04.ipynb)
+
+Conservez l’installation et les données. Ajoutez les notebooks ; aucune nouvelle bibliothèque en J3. Installez PyTorch avant J4 ou utilisez la variante Kaggle sur CPU.
+
 ## ML avancé — J2 : évaluer sans fuite
 
 **[Commencer J2](usecase/MyLittleMLLab/DEMARRER_J2.md)** · [Notebook AML_02](usecase/MyLittleMLLab/notebooks/AML_02_atelier.ipynb) · [Kit complet J2](kits/MyLittleMLLab_J2.zip?raw=true)
