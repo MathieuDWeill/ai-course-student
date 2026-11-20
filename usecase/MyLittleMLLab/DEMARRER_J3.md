@@ -55,3 +55,5 @@ Le dossier runs/J3 contient les tableaux, les prédictions et le manifeste. Comp
 - Cellule 31 : La vérification finale.
 
 [Glossaire des mots et des calculs du laboratoire](GLOSSAIRE_ML_AVANCE.md).
+
+Le cours projeté utilise la version illustrée. Le notebook renforcé et ses numéros de cellules restent identiques. Les activités sont individuelles et corrigées avec le professeur. [Questions de pop culture](PAUSES_POP_CULTURE.md).

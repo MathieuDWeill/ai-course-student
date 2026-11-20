@@ -1,6 +1,6 @@
 # J3 — Feuille de travail accompagnée
 
-Travail en binôme. Le professeur fait un premier exemple, vérifie une réponse intermédiaire puis corrige collectivement. Inscrire les réponses dans un document ou dans des cellules de texte du notebook. Chaque membre doit pouvoir expliquer le résultat.
+Travail individuel guidé. Le professeur fait un premier exemple, vérifie une réponse intermédiaire puis corrige collectivement. Inscrire les réponses dans un document ou dans des cellules de texte du notebook. Chaque étudiant doit pouvoir expliquer le résultat.
 
 ## 1. Auditer trois annonces (15 min)
 
@@ -45,3 +45,7 @@ Après la cellule 25, choisir un groupe. Relever effectif, nombre de fraudes, AU
 ## 7. Bilan de deux minutes
 
 Montrer un tableau et un artefact. Expliquer la question, ce qui changeait, les preuves et le modèle retenu. Donner une prochaine expérience avec budget. Compléter le journal dans runs/J3. Critères : question claire, protocole contrôlé, preuve interprétée, limite comprise.
+
+## Pauses illustrées
+
+Répondre individuellement avant la correction collective. [Retrouver les huit scénarios](PAUSES_POP_CULTURE.md). Pour chaque cas : une prédiction, une justification et le lien avec le notebook.

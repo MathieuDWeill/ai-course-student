@@ -1,6 +1,6 @@
 # J4 — Feuille de travail accompagnée
 
-Travail guidé en binôme, avec une réponse individuelle à la fin. Les exemples miniatures expliquent le mécanisme et ne constituent pas une évaluation Kaggle.
+Travail individuel guidé, avec une réponse écrite à chaque étape. Les exemples miniatures expliquent le mécanisme et ne constituent pas une évaluation Kaggle.
 
 ## 1. Deux pas d’apprentissage (20 min)
 
@@ -58,3 +58,7 @@ valid_logits = net(x_valid)
 ## 9. Bilan individuel (5 min)
 
 En une phrase chacun : forward, backward, step, zero_grad, validation croisée, prétraitement ajusté. Expliquer ensuite pourquoi le meilleur réseau peut perdre face à la référence.
+
+## Pauses illustrées
+
+Répondre individuellement avant la correction collective. [Retrouver les huit scénarios](PAUSES_POP_CULTURE.md). Pour chaque cas : une prédiction, une justification et le lien avec le notebook.

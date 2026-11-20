@@ -110,3 +110,5 @@ Les numéros comptent toutes les cellules, textes compris. Les sorties vont dans
 Vous pouvez lire le cours et faire les calculs des six paiements sur la fiche, sans données Kaggle. L’[annexe CPU](annexes_cpu/AML_01_atelier.ipynb) permet aussi de vérifier l’installation et la boucle d’export/import avec les chiffres manuscrits 8×8 déjà inclus. Ouvrez ce fichier dans JupyterLab uniquement sur indication du professeur. **Elle traite un autre problème** : ses classes, sa log-loss et ses scores ne se comparent pas à ceux de la fraude.
 
 [Provenance des données](data/manifest.json) · [Distribution des données et poids](DATA_RIGHTS.md)
+
+**Participation individuelle :** [pauses de pop culture](PAUSES_POP_CULTURE.md), puis une prédiction, une observation et une conclusion dans le notebook de chaque étudiant. Les activités se corrigent collectivement.
