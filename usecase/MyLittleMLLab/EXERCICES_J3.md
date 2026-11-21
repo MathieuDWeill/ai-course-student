@@ -2,9 +2,11 @@
 
 Travail individuel guidé. Le professeur fait un premier exemple, vérifie une réponse intermédiaire puis corrige collectivement. Inscrire les réponses dans un document ou dans des cellules de texte du notebook. Chaque étudiant doit pouvoir expliquer le résultat.
 
-## 1. Auditer trois annonces (15 min)
+## 1. Le dossier des trois modèles (15 min)
 
-A : « 99 % sur le train ». B : « Meilleur modèle sur un nouveau split ». C : « Gain de 0,002, dix fois plus lent ». Pour chaque annonce : quelle conclusion est possible, quelle preuve manque, quelle vérification faire ensuite ?
+Cas fictif distinct des résultats Kaggle. La question est de détecter la fraude chez de nouveaux clients. A annonce une AUC de 0,99, B de 0,94 et C de 0,91.
+
+Écrire un premier choix, ou une information nécessaire avant de choisir. Le professeur révèle ensuite les indices de protocole. Réviser sa conclusion avec une raison. Une bonne conclusion peut demander une nouvelle évaluation plutôt qu’un déploiement immédiat.
 
 ## 2. Arbre et Gini (20 min)
 
@@ -49,3 +51,7 @@ Montrer un tableau et un artefact. Expliquer la question, ce qui changeait, les 
 ## Pauses illustrées
 
 Répondre individuellement avant la correction collective. [Retrouver les huit scénarios](PAUSES_POP_CULTURE.md). Pour chaque cas : une prédiction, une justification et le lien avec le notebook.
+
+## Trois tickets personnels
+
+Utiliser le [carnet de défis](CARNET_DEFIS.md) ou sa [version imprimable de deux pages](Carnet_Defis_J3_J4.pdf). Écrire un choix avant le résultat, une observation après, puis une décision justifiée. La justesse de la prédiction initiale ne conditionne pas les trois points de progression.

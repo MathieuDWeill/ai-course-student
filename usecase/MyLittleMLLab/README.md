@@ -112,3 +112,5 @@ Vous pouvez lire le cours et faire les calculs des six paiements sur la fiche, s
 [Provenance des données](data/manifest.json) · [Distribution des données et poids](DATA_RIGHTS.md)
 
 **Participation individuelle :** [pauses de pop culture](PAUSES_POP_CULTURE.md), puis une prédiction, une observation et une conclusion dans le notebook de chaque étudiant. Les activités se corrigent collectivement.
+
+**Atelier Vivant :** [carnet des trois missions](CARNET_DEFIS.md) · [deux pages à imprimer](Carnet_Defis_J3_J4.pdf). Chacun écrit ses choix avant les révélations, puis une preuve et une décision. Les repères du notebook restent identiques.

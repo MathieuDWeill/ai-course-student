@@ -18,6 +18,8 @@ Conservez l’installation et les données. Ajoutez les notebooks ; aucune nouve
 
 Parcours renforcé : exemples résolus et [exercices J3](usecase/MyLittleMLLab/EXERCICES_J3.md) / [exercices J4](usecase/MyLittleMLLab/EXERCICES_J4.md). Télécharger la nouvelle version des ateliers avant la séance : leurs numéros de cellules ont changé.
 
+Atelier Vivant : [carnet individuel des trois missions](usecase/MyLittleMLLab/CARNET_DEFIS.md) et [version imprimable](usecase/MyLittleMLLab/Carnet_Defis_J3_J4.pdf).
+
 ## ML avancé — J2 : évaluer sans fuite
 
 **[Commencer J2](usecase/MyLittleMLLab/DEMARRER_J2.md)** · [Notebook AML_02](usecase/MyLittleMLLab/notebooks/AML_02_atelier.ipynb) · [Kit complet J2](kits/MyLittleMLLab_J2.zip?raw=true)

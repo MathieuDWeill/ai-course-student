@@ -43,7 +43,7 @@ Associer chaque fichier à son rôle : poids_reseau.pt, pretraitement.joblib, ma
 
 ## 8. Réparer la boucle (20 min)
 
-Lire sans exécuter ce code incorrect. Réécrire l’apprentissage et la mesure, puis expliquer quatre erreurs.
+Lire sans exécuter ce code incorrect. Dans cet exercice fictif, net contient du dropout et criterion est CrossEntropyLoss. Le réseau principal du tournoi ne contient pas de dropout. Réécrire l’apprentissage et la mesure, puis expliquer quatre erreurs.
 
 ```python
 # Code volontairement incorrect à analyser sur papier.
@@ -62,3 +62,7 @@ En une phrase chacun : forward, backward, step, zero_grad, validation croisée, 
 ## Pauses illustrées
 
 Répondre individuellement avant la correction collective. [Retrouver les huit scénarios](PAUSES_POP_CULTURE.md). Pour chaque cas : une prédiction, une justification et le lien avec le notebook.
+
+## Trois tickets personnels
+
+Utiliser le [carnet de défis](CARNET_DEFIS.md) ou sa [version imprimable de deux pages](Carnet_Defis_J3_J4.pdf). Écrire un choix avant le résultat, une observation après, puis une décision justifiée. La justesse de la prédiction initiale ne conditionne pas les trois points de progression.
