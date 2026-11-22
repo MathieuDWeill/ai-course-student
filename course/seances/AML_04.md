@@ -4,6 +4,16 @@ Conception pédagogique : Mathieu Weill.
 
 **Comment les poids changent-ils pendant l’apprentissage ?**
 
+## À ouvrir pendant le cours J4
+
+**La présentation détaillée du professeur suit [AML_04_atelier.ipynb](../../usecase/MyLittleMLLab/notebooks/AML_04_atelier.ipynb), qui contient 38 cellules.** Les numéros annoncés en classe comptent aussi les cellules de texte.
+
+1. Suivre les [consignes de préparation J4](../../usecase/MyLittleMLLab/DEMARRER_J4.md).
+2. Placer le notebook dans `MyLittleMLLab/notebooks`, avec les données et l’environnement déjà utilisés en J1/J2.
+3. Exécuter dans l’ordre, au signal du professeur. Après un redémarrage du noyau, reprendre les cellules précédentes.
+
+Le petit notebook du socle ci-dessous sert à réviser les notions avec des exemples courts. Ses repères D1/D2 ne correspondent pas aux numéros de cellules de l’atelier.
+
 ## Le trio du chapitre
 
 - [Guide de séance](../chapitres/AML_04/README.md)
@@ -23,9 +33,20 @@ Les démonstrations D1 et D2, les exercices E1/E2 et le bilan B partagent les m�
 
 Tracer entrée, sortie, perte, gradient et mise à jour dans cet ordre logique.
 
+## Avant de quitter la séance
+
+Sans relire la correction, savoir :
+
+- Décrire dans l’ordre : prédiction, perte, gradient, mise à jour des poids.
+- Distinguer le calcul du gradient de la modification des poids et expliquer le rôle du taux d’apprentissage.
+- Comparer le réseau à la référence avec le même protocole, même si le réseau gagne moins souvent.
+- Montrer les fichiers de `runs/J4` et expliquer pourquoi les poids seuls ne suffisent pas à reproduire une prédiction.
+
+Si un point bloque, noter la cellule concernée et demander une reprise avec le professeur. Un notebook exécuté ne suffit pas à prouver que ces étapes sont comprises.
+
 ## Vérification et limites
 
-Le notebook du chapitre a été exécuté localement dans un noyau neuf. Les résultats des petits exemples ne constituent pas des scores Kaggle. Les ateliers sur données officielles ont leurs propres prérequis ; ils ne sont pas déclarés réexécutés par cette publication. [Détail des vérifications](../VERIFICATION.md).
+Le notebook du chapitre a été exécuté localement dans un noyau neuf. Les résultats des petits exemples ne constituent pas des scores Kaggle. L’atelier local AML_04 a également été exécuté entièrement dans un noyau neuf, sur CPU, avec les données officielles locales et une limite de 15 000 observations. Cette vérification ne couvre pas tous les PC/Mac ni une exécution authentifiée sur Kaggle. [Détail des vérifications](../VERIFICATION.md).
 
 [Catalogue](../CATALOGUE.md) · [Aide](../AIDE.md)
 

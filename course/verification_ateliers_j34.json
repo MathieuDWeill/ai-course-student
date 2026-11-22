@@ -1,0 +1,21 @@
+{
+  "scope": "Ateliers étudiants locaux J3/J4, données officielles, CPU, limite 15000",
+  "results": [
+    {
+      "day": 3,
+      "status": "passed",
+      "cells": 32,
+      "seconds": 13.4
+    },
+    {
+      "day": 4,
+      "status": "passed",
+      "cells": 38,
+      "seconds": 9.2
+    }
+  ],
+  "excludes": [
+    "Exécution authentifiée Kaggle",
+    "Compatibilité avec chaque poste étudiant"
+  ]
+}
