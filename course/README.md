@@ -1,3 +1,5 @@
-# Course
+# Supports du parcours
 
-Supports courts lies au syllabus principal. Les notebooks restent dans `notebooks/`.
+[Catalogue des séances](CATALOGUE.md) · [Accompagnement](ACCOMPAGNEMENT.md) · [Dépannage](AIDE.md)
+
+Conception pédagogique : Mathieu Weill.

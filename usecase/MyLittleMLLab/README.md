@@ -1,5 +1,7 @@
 # ML avancé — MyLittleMLLab
 
+**[Fiches de séance, contrôles et aide](../../course/CATALOGUE.md)**
+
 **J3 : [guide](DEMARRER_J3.md) · [notebook AML_03](notebooks/AML_03_atelier.ipynb).**
 
 **J4 : [guide et installation PyTorch](DEMARRER_J4.md) · [notebook AML_04](notebooks/AML_04_atelier.ipynb).**

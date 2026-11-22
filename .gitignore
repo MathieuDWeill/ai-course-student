@@ -21,3 +21,13 @@ data/*
 
 # Kit enseignant conservé dans le dépôt privé ai-course.
 /usecase/DecisionLab_01_Zillow/
+
+# Documents professeur et sorties locales, hors distribution étudiante.
+/teacher/
+/teaching/
+/output/
+/outputs/
+/.cursor/
+
+# Le manuel complet et ses sources sont gérés dans le dépôt professeur.
+/course/parcours/

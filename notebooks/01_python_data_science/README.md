@@ -1,5 +1,7 @@
 # Bloc 1 — Python pour la Data Science
 
+**[Fiches de séance et accompagnement](../../course/CATALOGUE.md)**
+
 Ordre recommandé :
 
 1. `B1_S01_logic_over_code.ipynb` — S1 : environnement, NumPy, Data Detective, grain, jointures et validation.
@@ -14,6 +16,5 @@ Activités complémentaires :
 - `B1_S01b_google_trends_optional.ipynb` — ancien cas Google Trends, utile en extension mais dépend d'un service web externe.
 - `B1_S02b_pandas_cleaning_alignment.ipynb` — exercice complémentaire de nettoyage/alignement Pandas.
 - `EDA_Toyota.ipynb` — lab EDA complémentaire sur les prix de Toyota Corolla d'occasion.
-- `CORRECTION_TOYOTA_EDA.md` — correction du lab Toyota.
 
 **Principe du bloc :** comprendre la question et le grain des données avant d'optimiser le code ou le modèle.
