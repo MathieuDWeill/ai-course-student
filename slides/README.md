@@ -24,3 +24,10 @@ Pour les matchs, utiliser un découpage chronologique.
 ## ML avancé — J1
 
 - [Cours étudiant J1 (PDF)](ML_Avance_J1_Etudiant.pdf) : 69 diapositives, captures et complément sur la régularisation, sans notes professeur.
+
+## Rappels accompagnés avant J3 et J4
+
+- [Avant J3 : référence, séparation et fuite](ML_Avance_J3_Rappel_Etudiant.pptx)
+- [Avant J4 : arbres, ensembles et comparaison](ML_Avance_J4_Rappel_Etudiant.pptx)
+
+Ces rappels sont des supports étudiants sans notes professeur. Les questions sont corrigées oralement pendant la séance.
