@@ -10,7 +10,7 @@ Un parcours pour formuler une question, fiabiliser les données, construire une 
 
 ## Commencer ici
 
-**[Choisir un chapitre](course/CATALOGUE.md)** · **[Télécharger le kit étudiant](kits/Parcours_IA_Etudiant.zip?raw=true)** · **[Lire le manuel](course/chapitres/Manuel_IA_Etudiant.pdf)**
+**[Catalogue des chapitres](course/CATALOGUE.md)** · **[Télécharger le kit étudiant](kits/Parcours_IA_Etudiant.zip?raw=true)** · **[Lire le manuel](course/chapitres/Manuel_IA_Etudiant.pdf)**
 
 Les 17 chapitres possèdent chacun un cours PDF rédigé, un PowerPoint étudiant, un notebook guidé et une fiche de démarrage. Les mêmes repères relient démonstrations, exercices et bilan. Les exemples résolus sont visibles ; les annotations et corrigés des exercices restent dans l’espace professeur.
 
