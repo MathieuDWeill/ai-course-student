@@ -31,3 +31,7 @@ Chaque chapitre possède un PDF de cours rédigé, un PowerPoint étudiant et un
 Python : comprendre et fiabiliser les données. ML avancé : comparer et livrer une expérience reproductible. NLP et vision : changer la représentation sans abandonner le protocole et l’analyse des erreurs. QUID reste le point de départ.
 
 Les ateliers historiques et de compétition sont accessibles depuis les fiches. Ils prolongent le socle ; une présence de fichier n’est pas une validation dans tous les environnements. [Vérifications et limites](VERIFICATION.md) · [Dépannage](AIDE.md).
+
+## Compléments du syllabus
+
+[Ouvrir les six compléments](complements/README.md) : hiérarchie et éthique, CNN, API REST/MLOps, GPT et résumé, détection/segmentation, puis application texte-image. Chacun possède un notebook, un PDF et un PowerPoint étudiant ; le guide indique où l’insérer.

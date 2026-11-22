@@ -1,0 +1,6 @@
+-r requirements.txt
+torch>=2.5,<3
+torchvision>=0.20,<1
+transformers>=4.50,<6
+pillow>=10,<13
+safetensors>=0.4,<1

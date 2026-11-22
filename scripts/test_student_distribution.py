@@ -26,4 +26,11 @@ class DistributionTests(unittest.TestCase):
  def test_executed_student_output_is_rejected(self):
   f=self.root/'course/chapitres/PY_01/notebook.ipynb';n=json.loads(f.read_text());c=next(c for c in n['cells'] if c['cell_type']=='code');c['outputs']=[{'output_type':'stream','name':'stdout','text':['private output']}];f.write_text(json.dumps(n))
   self.assertTrue(any('Executed outputs' in e for e in check(self.root)))
+ def test_supplement_speaker_notes_are_rejected(self):
+  slide=self.root/'course/complements/AML_C2/presentation.pptx'
+  with zipfile.ZipFile(slide,'a') as z:z.writestr('ppt/notesSlides/notesSlide999.xml','private note')
+  self.assertTrue(any('Private PowerPoint part' in e for e in check(self.root)))
+ def test_supplement_teacher_metadata_is_rejected(self):
+  f=self.root/'course/complements/NLP_C1/notebook.ipynb';n=json.loads(f.read_text());n['metadata']['audience']='teacher';f.write_text(json.dumps(n))
+  self.assertTrue(any('Teacher notebook metadata' in e for e in check(self.root)))
 if __name__=='__main__':unittest.main()

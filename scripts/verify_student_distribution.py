@@ -13,7 +13,12 @@ def check(root):
   if not (root/'course/seances'/f"{s['id']}.md").is_file():errors.append('Missing session card: '+s['id'])
   if s.get('supports_complets') and not all(s.get(k) for k in ['notebook','powerpoint','pdf_cours']):errors.append('Incomplete session marked complete: '+s['id'])
   if s.get('notes_professeur_autorisees') or s.get('corriges_exercices_autorises'):errors.append('Teacher material authorized in student catalog: '+s['id'])
- for f in [*list((root/'slides').glob('*.pptx')),*list((root/'course/chapitres').glob('*/presentation.pptx'))]:
+ supplement_catalog=root/'course/complements/catalogue.json'
+ if supplement_catalog.exists():
+  for c in json.loads(supplement_catalog.read_text()):
+   for key in ['notebook','pdf','powerpoint','guide']:
+    if not (supplement_catalog.parent/c[key]).is_file():errors.append('Missing supplement resource: '+c['id']+'/'+c[key])
+ for f in [*list((root/'slides').glob('*.pptx')),*list((root/'course/chapitres').glob('*/presentation.pptx')),*list((root/'course/complements').glob('*/presentation.pptx'))]:
   with zipfile.ZipFile(f) as z:
    if z.testzip():errors.append('Invalid ZIP: '+f.name)
    for name in z.namelist():
@@ -28,12 +33,12 @@ def check(root):
   if re.match(r'(?:CORRECTION_|.*_corrig[eé](?:\.|_))',f.name,re.I):errors.append('Correction file in student tree: '+str(f.relative_to(root)))
  for folder in [root/'teacher',root/'teaching']:
   if folder.exists():errors.append('Teacher directory in student tree: '+folder.name)
- for f in [root/'README.md',root/'course/README.md',*list((root/'course').glob('*.md')),*list((root/'course/seances').glob('*.md')),*list((root/'course/chapitres').glob('**/*.md'))]:
+ for f in [root/'README.md',root/'course/README.md',*list((root/'course').glob('*.md')),*list((root/'course/seances').glob('*.md')),*list((root/'course/chapitres').glob('**/*.md')),*list((root/'course/complements').glob('**/*.md'))]:
   for target in re.findall(r'\]\(([^)]+)\)',f.read_text()):
    if re.match(r'[a-z]+://|#',target):continue
    local=target.split('#')[0].split('?')[0]
    if not (f.parent/local).exists():errors.append('Broken link: '+str(f.relative_to(root))+' -> '+target)
- for folder in (root/'course/chapitres').glob('*'):
+ for folder in [*(root/'course/chapitres').glob('*'),*(root/'course/complements').glob('*')]:
   if not folder.is_dir():continue
   f=folder/'notebook.ipynb'
   if not f.exists():continue
@@ -51,7 +56,7 @@ def check(root):
   from pypdf import PdfReader
  except ImportError:PdfReader=None
  if PdfReader:
-  for f in (root/'course/chapitres').glob('**/*.pdf'):
+  for f in [*(root/'course/chapitres').glob('**/*.pdf'),*(root/'course/complements').glob('**/*.pdf')]:
    reader=PdfReader(f);text='\n'.join(p.extract_text() or '' for p in reader.pages)
    if any(marker in text for marker in ['Notes professeur réservées','Professeur - Ne pas redistribuer','Version professeur avec réponses']):errors.append('Private PDF content: '+str(f.relative_to(root)))
    if 'Professeur' in str((reader.metadata or {}).get('/Title','')):errors.append('Private PDF metadata: '+str(f.relative_to(root)))

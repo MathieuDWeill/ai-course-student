@@ -28,3 +28,7 @@ Contrôler les entrées, les artefacts et l’alignement des sorties.
 Le notebook du chapitre a été exécuté localement dans un noyau neuf. Les résultats des petits exemples ne constituent pas des scores Kaggle. Les ateliers sur données officielles ont leurs propres prérequis ; ils ne sont pas déclarés réexécutés par cette publication. [Détail des vérifications](../VERIFICATION.md).
 
 [Catalogue](../CATALOGUE.md) · [Aide](../AIDE.md)
+
+## Complément du syllabus
+
+[AML_C2 — API REST, livraison et suivi MLOps](../complements/AML_C2/README.md) : Appeler /predict, refuser une entrée invalide, tester le rechargement et expliquer une alerte de dérive.

@@ -37,3 +37,5 @@ Les 34 démonstrations du socle sont exécutables sur CPU, sans compte, GPU ni d
 ## Utilisation
 
 Les supports étudiants sont publics. Leur consultation, exécution et adaptation pour l’apprentissage personnel sont encadrées par les [conditions d’utilisation](NOTICE_UTILISATION.md). Les licences et crédits tiers restent applicables. La visibilité publique ne transfère pas la propriété du contenu.
+
+[Compléments du syllabus](course/complements/README.md) — six ateliers accompagnés avec notebook, PDF et présentation.

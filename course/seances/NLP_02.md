@@ -28,3 +28,7 @@ Identifier ce qui est gelé, entraîné et mis en cache.
 Le notebook du chapitre a été exécuté localement dans un noyau neuf. Les résultats des petits exemples ne constituent pas des scores Kaggle. Les ateliers sur données officielles ont leurs propres prérequis ; ils ne sont pas déclarés réexécutés par cette publication. [Détail des vérifications](../VERIFICATION.md).
 
 [Catalogue](../CATALOGUE.md) · [Aide](../AIDE.md)
+
+## Complément du syllabus
+
+[NLP_C1 — GPT, résumé et assistant documentaire](../complements/NLP_C1/README.md) : Comparer une référence extractive et une génération réelle ; auditer les faits, omissions et refus.

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "PY_C1",
+    "title": "Clustering hiérarchique et responsabilité",
+    "after": "PY_05",
+    "minutes_indicatives": 45,
+    "notebook": "PY_C1/notebook.ipynb",
+    "pdf": "PY_C1/cours.pdf",
+    "powerpoint": "PY_C1/presentation.pptx",
+    "guide": "PY_C1/README.md"
+  },
+  {
+    "id": "AML_C1",
+    "title": "CNN : du filtre au classifieur",
+    "after": "AML_04",
+    "minutes_indicatives": 45,
+    "notebook": "AML_C1/notebook.ipynb",
+    "pdf": "AML_C1/cours.pdf",
+    "powerpoint": "AML_C1/presentation.pptx",
+    "guide": "AML_C1/README.md"
+  },
+  {
+    "id": "AML_C2",
+    "title": "API REST, livraison et suivi MLOps",
+    "after": "AML_06",
+    "minutes_indicatives": 90,
+    "notebook": "AML_C2/notebook.ipynb",
+    "pdf": "AML_C2/cours.pdf",
+    "powerpoint": "AML_C2/presentation.pptx",
+    "guide": "AML_C2/README.md"
+  },
+  {
+    "id": "NLP_C1",
+    "title": "GPT, résumé et assistant documentaire",
+    "after": "NLP_02",
+    "minutes_indicatives": 75,
+    "notebook": "NLP_C1/notebook.ipynb",
+    "pdf": "NLP_C1/cours.pdf",
+    "powerpoint": "NLP_C1/presentation.pptx",
+    "guide": "NLP_C1/README.md"
+  },
+  {
+    "id": "CV_C1",
+    "title": "Détection et segmentation",
+    "after": "CV_01",
+    "minutes_indicatives": 60,
+    "notebook": "CV_C1/notebook.ipynb",
+    "pdf": "CV_C1/cours.pdf",
+    "powerpoint": "CV_C1/presentation.pptx",
+    "guide": "CV_C1/README.md"
+  },
+  {
+    "id": "MM_C1",
+    "title": "Application texte-image et audit final",
+    "after": "CV_02",
+    "minutes_indicatives": 60,
+    "notebook": "MM_C1/notebook.ipynb",
+    "pdf": "MM_C1/cours.pdf",
+    "powerpoint": "MM_C1/presentation.pptx",
+    "guide": "MM_C1/README.md"
+  }
+]
