@@ -20,4 +20,10 @@ class DistributionTests(unittest.TestCase):
  def test_missing_catalog_resource_is_rejected(self):
   f=self.root/'course/catalogue.json';c=json.loads(f.read_text());c['sessions'][0]['notebook']='missing.ipynb';f.write_text(json.dumps(c))
   self.assertTrue(any('Missing resource' in e for e in check(self.root)))
+ def test_teacher_notebook_metadata_is_rejected(self):
+  f=self.root/'course/chapitres/PY_01/notebook.ipynb';n=json.loads(f.read_text());n['metadata']['audience']='teacher';f.write_text(json.dumps(n))
+  self.assertTrue(any('Teacher notebook metadata' in e for e in check(self.root)))
+ def test_executed_student_output_is_rejected(self):
+  f=self.root/'course/chapitres/PY_01/notebook.ipynb';n=json.loads(f.read_text());c=next(c for c in n['cells'] if c['cell_type']=='code');c['outputs']=[{'output_type':'stream','name':'stdout','text':['private output']}];f.write_text(json.dumps(n))
+  self.assertTrue(any('Executed outputs' in e for e in check(self.root)))
 if __name__=='__main__':unittest.main()

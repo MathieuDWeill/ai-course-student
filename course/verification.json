@@ -1,0 +1,121 @@
+{
+  "scope": "17 notebooks autonomes exécutés depuis un noyau neuf ; code des 17 versions professeur identique et contrôlé.",
+  "python_local": "3.14.5",
+  "versions_locales": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1"
+  },
+  "chapitres": 17,
+  "demonstrations_executees": 34,
+  "student_slides": 393,
+  "local_results": [
+    {
+      "id": "AML_01",
+      "status": "PASS"
+    },
+    {
+      "id": "AML_02",
+      "status": "PASS"
+    },
+    {
+      "id": "AML_03",
+      "status": "PASS"
+    },
+    {
+      "id": "AML_04",
+      "status": "PASS"
+    },
+    {
+      "id": "AML_05",
+      "status": "PASS"
+    },
+    {
+      "id": "AML_06",
+      "status": "PASS"
+    },
+    {
+      "id": "CV_01",
+      "status": "PASS"
+    },
+    {
+      "id": "CV_02",
+      "status": "PASS"
+    },
+    {
+      "id": "NLP_01",
+      "status": "PASS"
+    },
+    {
+      "id": "NLP_02",
+      "status": "PASS"
+    },
+    {
+      "id": "PY_01",
+      "status": "PASS"
+    },
+    {
+      "id": "PY_02",
+      "status": "PASS"
+    },
+    {
+      "id": "PY_03",
+      "status": "PASS"
+    },
+    {
+      "id": "PY_04",
+      "status": "PASS"
+    },
+    {
+      "id": "PY_05",
+      "status": "PASS"
+    },
+    {
+      "id": "PY_06",
+      "status": "PASS"
+    },
+    {
+      "id": "PY_07",
+      "status": "PASS"
+    }
+  ],
+  "limits": [
+    "Exécution locale CPU, pas de test Windows.",
+    "Les ateliers historiques de compétition ne sont pas réexécutés par ce contrôle.",
+    "Aucun entraînement sur Kaggle ni téléchargement de poids préentraînés."
+  ],
+  "exercice_policy": "Les réponses E1 et E2 ne sont pas distribuées.",
+  "applications_python_executees": [
+    {
+      "file": "notebooks/01_python_data_science/B1_S01_logic_over_code.ipynb",
+      "status": "PASS"
+    },
+    {
+      "file": "notebooks/01_python_data_science/B1_S02_pandas_cleaning_alignment.ipynb",
+      "status": "PASS"
+    },
+    {
+      "file": "notebooks/01_python_data_science/B1_S03_eda_visualization_storytelling.ipynb",
+      "status": "PASS"
+    },
+    {
+      "file": "notebooks/01_python_data_science/B1_S04_supervised_ml_baseline.ipynb",
+      "status": "PASS"
+    },
+    {
+      "file": "notebooks/01_python_data_science/B1_S05_unsupervised_patterns.ipynb",
+      "status": "PASS"
+    },
+    {
+      "file": "notebooks/01_python_data_science/B1_S06_reproducible_data_science_pipeline.ipynb",
+      "status": "PASS"
+    },
+    {
+      "file": "notebooks/01_python_data_science/B1_S07_S08_guided_project_restitution.ipynb",
+      "status": "PASS"
+    }
+  ],
+  "socle_manuel_pages": 58
+}

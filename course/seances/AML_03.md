@@ -2,48 +2,29 @@
 
 Conception pédagogique : Mathieu Weill.
 
-## Objectif
+**Comment comparer des familles sans changer la question ?**
 
-Comparer les candidats à protocole fixé et compter les fits.
+## Le trio du chapitre
 
-## Avant de commencer
+- [Guide de séance](../chapitres/AML_03/README.md)
+- [PDF étudiant rédigé](../chapitres/AML_03/cours.pdf)
+- [PowerPoint étudiant](../chapitres/AML_03/presentation.pptx)
+- [Notebook guidé](../chapitres/AML_03/notebook.ipynb)
 
-Les folds, les transformations et la référence linéaire. Reformuler cet acquis avec un exemple ; si un mot bloque, le signaler avant le premier calcul.
+Les démonstrations D1 et D2, les exercices E1/E2 et le bilan B partagent les mêmes repères. Le PowerPoint contient 24 diapositives. La version étudiante ne contient ni notes de présentation professeur ni réponses réservées aux exercices.
 
-## Les supports à utiliser
+## Application complémentaire
 
-- [Notebook](../../usecase/MyLittleMLLab/notebooks/AML_03_atelier.ipynb).
-- [Guide de démarrage](../../usecase/MyLittleMLLab/DEMARRER_J3.md).
-- [Cours rédigé](../../usecase/MyLittleMLLab/lectures/AML_03_cours.md).
-- PowerPoint étudiant dédié : pas encore publié pour cette fiche.
-- PDF de cours étudiant dédié : pas encore publié pour cette fiche.
+[Ouvrir l’atelier d’application](../../usecase/MyLittleMLLab/notebooks/AML_03_atelier.ipynb). Ce carnet est distinct du socle guidé. Les anciens repères numériques des ateliers et des projections détaillées sont conservés.
 
-Les compléments thématiques ne sont pas présentés comme synchronisés cellule par cellule. Le PDF de projection J1 est un support de slides, distinct d’un chapitre rédigé.
+[Préparer les données et l’environnement de l’application](../../usecase/MyLittleMLLab/DEMARRER_J3.md).
 
-## Le parcours accompagné
+## Réussite attendue
 
-1. Lire la question et annoncer ce que représente une ligne, une entrée ou un tenseur.
-2. Suivre la première démonstration du professeur et prévoir une sortie avant exécution.
-3. Exécuter les cellules dans l’ordre, avec un arrêt au point indiqué en séance.
-4. Écrire une observation précise et son interprétation ; traiter une difficulté à la fois.
-5. Conserver le livrable et rédiger une limite avant de passer à l’extension.
+Examiner les différences par fold et le coût, pas seulement la meilleure moyenne.
 
-## Vérifier que l’étape est comprise
+## Vérification et limites
 
-Trois configurations sont évaluées sur trois folds. Combien de fits faut-il pour cette recherche, hors refit final ?
+Le notebook du chapitre a été exécuté localement dans un noyau neuf. Les résultats des petits exemples ne constituent pas des scores Kaggle. Les ateliers sur données officielles ont leurs propres prérequis ; ils ne sont pas déclarés réexécutés par cette publication. [Détail des vérifications](../VERIFICATION.md).
 
-Cette question sert au diagnostic ; sa correction est donnée par le professeur. Les exemples résolus du cours restent distincts des exercices à rendre.
-
-## Ce que je conserve
-
-Une réponse personnelle, la sortie qui l’appuie et une limite. Pour un entraînement, ajouter protocole, configuration et durée. Les fichiers à rendre et leur format sont ceux annoncés en séance ; ne pas inventer une soumission Kaggle ou un score attendu.
-
-## Si je bloque
-
-Consulter le [guide de dépannage](../AIDE.md). Noter la cellule, le message exact et le résultat attendu. Ne pas supprimer l’erreur en changeant plusieurs paramètres au hasard.
-
-## La suite
-
-J4 ouvre la boîte de l’entraînement neuronal et le compare à ces références.
-
-[Retour au catalogue](../CATALOGUE.md)
+[Catalogue](../CATALOGUE.md) · [Aide](../AIDE.md)

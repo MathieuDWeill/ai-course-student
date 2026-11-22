@@ -1,0 +1,2 @@
+-r requirements-deep.txt
+catboost>=1.2,<2

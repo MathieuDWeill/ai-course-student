@@ -2,24 +2,29 @@
 
 Conception pédagogique : Mathieu Weill.
 
-## Objectif
+**Qu’est-ce qu’un modèle réellement livrable ?**
 
-Les mêmes contrats seront conservés lorsque les entrées deviendront des textes et des images.
+## Le trio du chapitre
 
-## Avant de commencer
+- [Guide de séance](../chapitres/AML_06/README.md)
+- [PDF étudiant rédigé](../chapitres/AML_06/cours.pdf)
+- [PowerPoint étudiant](../chapitres/AML_06/presentation.pptx)
+- [Notebook guidé](../chapitres/AML_06/notebook.ipynb)
 
-Le pipeline, les artefacts, les budgets et la décision d’expérience. Reformuler cet acquis avec un exemple ; si un mot bloque, le signaler avant le premier calcul.
+Les démonstrations D1 et D2, les exercices E1/E2 et le bilan B partagent les mêmes repères. Le PowerPoint contient 23 diapositives. La version étudiante ne contient ni notes de présentation professeur ni réponses réservées aux exercices.
 
-## Disponibilité
+## Application complémentaire
 
-Cette séance est en préparation pour diffusion. Le notebook, le support de projection et le PDF de cette version ne sont pas encore publiés ici. Ne pas déduire leur disponibilité de la présence de cette fiche.
+[Ouvrir l’atelier d’application](../../usecase/MyLittleMLLab/notebooks/AML_06_atelier.ipynb). Ce carnet est distinct du socle guidé. Les anciens repères numériques des ateliers et des projections détaillées sont conservés.
 
-## Si je bloque
+[Préparer les données et l’environnement de l’application](../../usecase/MyLittleMLLab/DEMARRER_APPLICATIONS.md).
 
-Consulter le [guide de dépannage](../AIDE.md). Noter la cellule, le message exact et le résultat attendu. Ne pas supprimer l’erreur en changeant plusieurs paramètres au hasard.
+## Réussite attendue
 
-## La suite
+Contrôler les entrées, les artefacts et l’alignement des sorties.
 
-Les mêmes contrats seront conservés lorsque les entrées deviendront des textes et des images.
+## Vérification et limites
 
-[Retour au catalogue](../CATALOGUE.md)
+Le notebook du chapitre a été exécuté localement dans un noyau neuf. Les résultats des petits exemples ne constituent pas des scores Kaggle. Les ateliers sur données officielles ont leurs propres prérequis ; ils ne sont pas déclarés réexécutés par cette publication. [Détail des vérifications](../VERIFICATION.md).
+
+[Catalogue](../CATALOGUE.md) · [Aide](../AIDE.md)

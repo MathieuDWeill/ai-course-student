@@ -1,35 +1,39 @@
-# Python, Machine Learning et IA appliquée
+# Parcours de la donnée à l’IA appliquée
+
+**Python pour la Data Science · Machine Learning avancé · NLP et vision**
 
 Conception pédagogique : Mathieu Weill.
 
-Le parcours apprend à formuler une question, fiabiliser les données, évaluer une expérience et expliquer une décision. Python constitue le socle ; le ML avancé approfondit les comparaisons ; le NLP et la vision étendent la démarche aux textes et aux images.
+[![Student distribution](https://github.com/MathieuDWeill/ai-course-student/actions/workflows/student-distribution.yml/badge.svg)](https://github.com/MathieuDWeill/ai-course-student/actions/workflows/student-distribution.yml)
 
-## Commencer une séance
+Un parcours pour formuler une question, fiabiliser les données, construire une référence, comparer des modèles et expliquer ce que leurs prédictions permettent de décider.
 
-**[Ouvrir le catalogue des séances](course/CATALOGUE.md)** puis choisir la fiche indiquée par le professeur. Elle rassemble les ressources disponibles, le chemin à suivre, les contrôles et le livrable.
+## Commencer ici
 
-- [Comment le parcours vous accompagne](course/ACCOMPAGNEMENT.md)
-- [Reprendre après une erreur](course/AIDE.md)
-- [Premier module Python](notebooks/01_python_data_science/README.md)
-- [Installation du laboratoire ML sur Windows et Mac](usecase/MyLittleMLLab/README.md)
+**[Choisir un chapitre](course/CATALOGUE.md)** · **[Télécharger le kit étudiant](kits/Parcours_IA_Etudiant.zip?raw=true)** · **[Lire le manuel](course/chapitres/Manuel_IA_Etudiant.pdf)**
 
-## Ressources déjà disponibles
+Les 17 chapitres possèdent chacun un cours PDF rédigé, un PowerPoint étudiant, un notebook guidé et une fiche de démarrage. Les mêmes repères relient démonstrations, exercices et bilan. Les exemples résolus sont visibles ; les annotations et corrigés des exercices restent dans l’espace professeur.
 
-| Module | Ressources |
+## Le parcours
+
+| Module | Progression |
 |---|---|
-| Python pour la data science | [Notebooks du premier module](notebooks/01_python_data_science/README.md) |
-| ML avancé J1 | [Guide d’installation](usecase/MyLittleMLLab/README.md) et [PDF de projection étudiant](slides/ML_Avance_J1_Etudiant.pdf) |
-| ML avancé J2 | [Démarrage J2](usecase/MyLittleMLLab/DEMARRER_J2.md) |
-| ML avancé J3 | [Démarrage J3](usecase/MyLittleMLLab/DEMARRER_J3.md) |
-| ML avancé J4 | [Démarrage J4](usecase/MyLittleMLLab/DEMARRER_J4.md) |
-| Autres supports projetés | [Index des slides](slides/README.md) |
+| Python pour la data science | Grain, tableaux, pandas, qualité, exploration, premiers modèles et reproductibilité |
+| ML avancé | Protocole, validation, arbres et ensembles, réseaux, budget d’expérience et livraison |
+| NLP et vision | Texte, TF-IDF, attention, représentations préentraînées, tenseurs et robustesse |
 
-Les supports complets et les kits supplémentaires sont remis selon les modalités du cours. Le catalogue ne présente pas une séance en préparation comme déjà distribuable.
+Les anciens notebooks et ateliers de compétition restent accessibles comme applications complémentaires dans les fiches. Ils sont distincts des petits exemples autonomes du manuel.
 
-## Installation du premier module
+## Installer, pratiquer et vérifier
 
-Suivre les instructions de [démarrage Windows/Mac](STUDENT_GIT_WORKFLOW.md). Le laboratoire ML possède son propre environnement : utiliser son guide plutôt que mélanger les installations.
+- [Installer les exemples guidés sur Windows/Mac](course/chapitres/README.md)
+- [Comprendre les étapes d’accompagnement](course/ACCOMPAGNEMENT.md)
+- [Reprendre après un blocage](course/AIDE.md)
+- [Voir ce qui a réellement été vérifié](course/VERIFICATION.md)
+- [Préparer les applications ML/NLP/vision](usecase/MyLittleMLLab/DEMARRER_APPLICATIONS.md)
 
-## Utilisation des supports
+Les 34 démonstrations du socle sont exécutables sur CPU, sans compte, GPU ni données externes après installation. Les applications de compétition demandent leurs données et parfois des poids préentraînés. Les contrôles automatiques n’attestent ni une installation sur chaque matériel ni une exécution Kaggle.
 
-Les étudiants peuvent consulter, exécuter et adapter les supports pour leur apprentissage personnel selon les [conditions d’utilisation](NOTICE_UTILISATION.md). Les crédits et licences des ressources tierces restent applicables. Les notes et corrigés professeur ne font pas partie de ce dépôt étudiant.
+## Utilisation
+
+Les supports étudiants sont publics. Leur consultation, exécution et adaptation pour l’apprentissage personnel sont encadrées par les [conditions d’utilisation](NOTICE_UTILISATION.md). Les licences et crédits tiers restent applicables. La visibilité publique ne transfère pas la propriété du contenu.

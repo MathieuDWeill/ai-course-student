@@ -2,24 +2,29 @@
 
 Conception pédagogique : Mathieu Weill.
 
-## Objectif
+**Quelle expérience mérite le prochain budget de calcul ?**
 
-La dernière journée ML transforme le candidat choisi en système vérifiable et livrable.
+## Le trio du chapitre
 
-## Avant de commencer
+- [Guide de séance](../chapitres/AML_05/README.md)
+- [PDF étudiant rédigé](../chapitres/AML_05/cours.pdf)
+- [PowerPoint étudiant](../chapitres/AML_05/presentation.pptx)
+- [Notebook guidé](../chapitres/AML_05/notebook.ipynb)
 
-Les erreurs, les représentations, les ensembles et la boucle neuronale. Reformuler cet acquis avec un exemple ; si un mot bloque, le signaler avant le premier calcul.
+Les démonstrations D1 et D2, les exercices E1/E2 et le bilan B partagent les mêmes repères. Le PowerPoint contient 23 diapositives. La version étudiante ne contient ni notes de présentation professeur ni réponses réservées aux exercices.
 
-## Disponibilité
+## Application complémentaire
 
-Cette séance est en préparation pour diffusion. Le notebook, le support de projection et le PDF de cette version ne sont pas encore publiés ici. Ne pas déduire leur disponibilité de la présence de cette fiche.
+[Ouvrir l’atelier d’application](../../usecase/MyLittleMLLab/notebooks/AML_05_atelier.ipynb). Ce carnet est distinct du socle guidé. Les anciens repères numériques des ateliers et des projections détaillées sont conservés.
 
-## Si je bloque
+[Préparer les données et l’environnement de l’application](../../usecase/MyLittleMLLab/DEMARRER_APPLICATIONS.md).
 
-Consulter le [guide de dépannage](../AIDE.md). Noter la cellule, le message exact et le résultat attendu. Ne pas supprimer l’erreur en changeant plusieurs paramètres au hasard.
+## Réussite attendue
 
-## La suite
+Choisir une expérience à partir d’une erreur observée et conclure même en cas d’échec.
 
-La dernière journée ML transforme le candidat choisi en système vérifiable et livrable.
+## Vérification et limites
 
-[Retour au catalogue](../CATALOGUE.md)
+Le notebook du chapitre a été exécuté localement dans un noyau neuf. Les résultats des petits exemples ne constituent pas des scores Kaggle. Les ateliers sur données officielles ont leurs propres prérequis ; ils ne sont pas déclarés réexécutés par cette publication. [Détail des vérifications](../VERIFICATION.md).
+
+[Catalogue](../CATALOGUE.md) · [Aide](../AIDE.md)
