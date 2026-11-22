@@ -32,3 +32,5 @@ Le notebook du chapitre a été exécuté localement dans un noyau neuf. Les ré
 ## Rappel avant la séance
 
 [Six diapositives de rappel accompagné](../../slides/ML_Avance_J4_Rappel_Etudiant.pptx) : répondre brièvement avant la correction orale. Ce support étudiant ne contient pas de notes professeur.
+
+Pour les repères numériques de la présentation détaillée de classe, ouvrir **AML_04_atelier.ipynb** dans la rubrique Application complémentaire ci-dessus.
