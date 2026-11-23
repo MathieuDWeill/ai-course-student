@@ -1,0 +1,5 @@
+kaggle==2.2.5
+six>=1.17,<2
+pandas>=2.2,<4
+numpy>=1.26,<3
+scikit-learn>=1.5,<2

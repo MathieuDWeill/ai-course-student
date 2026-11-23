@@ -55,3 +55,15 @@ Le notebook du chapitre a été exécuté localement dans un noyau neuf. Les ré
 [Six diapositives de rappel accompagné](../../slides/ML_Avance_J3_Rappel_Etudiant.pptx) : répondre brièvement avant la correction orale. Ce support étudiant ne contient pas de notes professeur.
 
 Pour les repères numériques de la présentation détaillée de classe, ouvrir **AML_03_atelier.ipynb** dans la rubrique Application complémentaire ci-dessus.
+
+## Deuxième atelier : décision et API Kaggle
+
+À utiliser après le choix du candidat : seuils, erreurs et coûts, puis installation et boucle API Kaggle. Le premier notebook reste intact.
+
+- [Télécharger AML_03_2_atelier.ipynb](../../usecase/MyLittleMLLab/notebooks/AML_03_2_atelier.ipynb).
+- [Guide de démarrage](../../usecase/MyLittleMLLab/DEMARRER_J3_2.md).
+- [Cours PDF](../../usecase/MyLittleMLLab/lectures/AML_03_2_cours.pdf).
+- [PowerPoint étudiant sans notes professeur](../../slides/ML_Avance_J3_2_Etudiant.pptx).
+- [Kit ZIP du deuxième atelier](../../kits/MyLittleMLLab_J3_2.zip).
+
+Les exemples de paiements sont fabriqués. Les commandes Kaggle sont désactivées par défaut ; chacun configure son propre accès et réalise les étapes distantes au signal du professeur.
