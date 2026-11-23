@@ -59,3 +59,7 @@ Pour les repères numériques de la présentation détaillée de classe, ouvrir 
 ## Complément du syllabus
 
 [AML_C1 — CNN : du filtre au classifieur](../complements/AML_C1/README.md) : Expliquer les dimensions d’une convolution et entraîner un petit CNN sur des chiffres intégrés.
+
+## Schémas détaillés de la projection
+
+[Présentation visuelle étudiant — 63 diapositives](../../slides/ML_Avance_J4_Visuel_Etudiant.pptx) · [PDF des schémas](../../usecase/MyLittleMLLab/lectures/AML_04_Schemas.pdf). Rappel arbre, forêt et boosting, puis calcul du réseau, gradients, boucle et courbes. Les notes professeur restent dans le dépôt enseignant.
