@@ -62,4 +62,6 @@ Pour les repères numériques de la présentation détaillée de classe, ouvrir 
 
 ## Schémas détaillés de la projection
 
-[Présentation visuelle étudiant — 63 diapositives](../../slides/ML_Avance_J4_Visuel_Etudiant.pptx) · [PDF des schémas](../../usecase/MyLittleMLLab/lectures/AML_04_Schemas.pdf). Rappel arbre, forêt et boosting, puis calcul du réseau, gradients, boucle et courbes. Les notes professeur restent dans le dépôt enseignant.
+[Présentation visuelle étudiant — 71 diapositives](../../slides/ML_Avance_J4_Visuel_Etudiant.pptx) · [PDF des schémas](../../usecase/MyLittleMLLab/lectures/AML_04_Schemas.pdf). Reprise guidée Kaggle K1 à K8, puis rappel arbre, forêt et boosting, et calcul du réseau, gradients, boucle et courbes. Les notes professeur restent dans le dépôt enseignant.
+
+[Guide de la reprise Kaggle K1 à K8](../../usecase/MyLittleMLLab/J4_REPRISE_KAGGLE.md). Les anciens repères 1 à 63 restent imprimés après cette introduction.

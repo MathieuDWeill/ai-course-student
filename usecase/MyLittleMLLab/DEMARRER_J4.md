@@ -62,3 +62,7 @@ Le dossier runs/J4 contient les tableaux, les prédictions et le manifeste. Comp
 Le cours projeté utilise la version Atelier Vivant. Le notebook renforcé et ses numéros de cellules restent identiques. Les activités sont individuelles et corrigées avec le professeur. [Questions de pop culture](PAUSES_POP_CULTURE.md).
 
 Préparer le [carnet de défis](CARNET_DEFIS.md). Les réponses individuelles se placent sur le carnet, dans un fichier à part ou à la fin du notebook pour conserver les repères de cellules. Les résultats se révèlent après les prédictions.
+
+## Avant J4 : terminer la boucle Kaggle
+
+[Suivre la reprise guidée K1 à K8](J4_REPRISE_KAGGLE.md) avant le notebook AML_04. Importer la variante J3 complète après la vérification de la sonde.
