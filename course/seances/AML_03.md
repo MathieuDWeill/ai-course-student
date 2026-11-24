@@ -67,3 +67,9 @@ Pour les repères numériques de la présentation détaillée de classe, ouvrir 
 - [Kit ZIP du deuxième atelier](../../kits/MyLittleMLLab_J3_2.zip).
 
 Les exemples de paiements sont fabriqués. Les commandes Kaggle sont désactivées par défaut ; chacun configure son propre accès et réalise les étapes distantes au signal du professeur.
+
+### Version visuelle du deuxième atelier
+
+La projection conserve les repères 51 à 97 et ajoute 74A/74B pour API, REST et FastAPI. Les seuils, erreurs, coûts et limites de capacité sont illustrés avec les dix paiements fabriqués du notebook.
+
+[PDF des diapositives visuelles](../../usecase/MyLittleMLLab/lectures/AML_03_2_Schemas.pdf). Le cours rédigé, le PowerPoint et le kit du deuxième atelier ont également été actualisés.

@@ -39,3 +39,7 @@ Termine par un bilan : étapes réellement réussies, preuves obtenues, blocages
 ```
 
 Copilot accompagne l’installation ; vous devez pouvoir expliquer ce que chaque commande fait et montrer la preuve qu’elle a fonctionné. Si le guide ou le notebook manque dans votre dossier, le récupérer avant de demander à Copilot de poursuivre. Pour un dépannage, partager le message d’erreur utile sans secret.
+
+## API, REST et FastAPI
+
+Les diapositives 74A et 74B et le rappel B6 du notebook expliquent la distinction. REST décrit un style d’architecture ; FastAPI est un framework Python pour construire une API. Pour cet atelier, nous utilisons la CLI Kaggle : ne pas installer FastAPI pour réaliser B6.
