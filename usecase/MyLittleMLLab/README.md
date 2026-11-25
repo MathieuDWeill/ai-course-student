@@ -116,3 +116,10 @@ Vous pouvez lire le cours et faire les calculs des six paiements sur la fiche, s
 **Participation individuelle :** [pauses de pop culture](PAUSES_POP_CULTURE.md), puis une prédiction, une observation et une conclusion dans le notebook de chaque étudiant. Les activités se corrigent collectivement.
 
 **Atelier Vivant :** [carnet des trois missions](CARNET_DEFIS.md) · [deux pages à imprimer](Carnet_Defis_J3_J4.pdf). Chacun écrit ses choix avant les révélations, puis une preuve et une décision. Les repères du notebook restent identiques.
+
+## Journées J5 et J6 — parcours guidés
+
+- [J5 : expériences, OOF et budget](DEMARRER_J5.md) — [kit étudiant complet](../../kits/MyLittleMLLab_J5.zip).
+- [J6 : contrat, livraison et API locale](DEMARRER_J6.md) — [kit étudiant complet](../../kits/MyLittleMLLab_J6.zip).
+
+Chaque journée propose un notebook D1 à D12, une projection sans notes professeur, un cours PDF et un PDF des diapositives. J6 reprend le dossier `runs/J5` ; les données officielles ne sont pas incluses.

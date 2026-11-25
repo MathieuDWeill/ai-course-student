@@ -1,30 +1,28 @@
-# AML_05 - Choisir les expériences et leur budget
+# AML_05 — Choisir une expérience et son budget
 
 Conception pédagogique : Mathieu Weill.
 
-**Quelle expérience mérite le prochain budget de calcul ?**
+Séance de 7 heures pédagogiques, hors pauses, avec démonstrations, manipulations accompagnées et vérifications individuelles.
 
-## Le trio du chapitre
+## Ouvrir les supports
 
-- [Guide de séance](../chapitres/AML_05/README.md)
-- [PDF étudiant rédigé](../chapitres/AML_05/cours.pdf)
-- [PowerPoint étudiant](../chapitres/AML_05/presentation.pptx)
-- [Notebook guidé](../chapitres/AML_05/notebook.ipynb)
+1. [Guide de démarrage PC et Mac](../../usecase/MyLittleMLLab/DEMARRER_J5.md).
+2. [Kit complet J5](../../kits/MyLittleMLLab_J5.zip) — extraction dans un nouveau dossier, données officielles à ajouter personnellement.
+3. [Notebook guidé étudiant](../../usecase/MyLittleMLLab/notebooks/AML_05_atelier.ipynb) — repères D1 à D12.
+4. [Cours PDF étudiant](../../usecase/MyLittleMLLab/lectures/AML_05_cours.pdf).
+5. [PowerPoint étudiant sans notes professeur](../../slides/ML_Avance_J5_Etudiant.pptx).
+6. [PDF des diapositives](../../usecase/MyLittleMLLab/lectures/AML_05_diapositives.pdf).
 
-Les démonstrations D1 et D2, les exercices E1/E2 et le bilan B partagent les mêmes repères. Le PowerPoint contient 23 diapositives. La version étudiante ne contient ni notes de présentation professeur ni réponses réservées aux exercices.
+## Ce qui évolue
 
-## Application complémentaire
+Après les modèles et le réseau de J3/J4 : annoncer une hypothèse, borner le calcul, construire des OOF, comparer par fold, tester une moyenne à poids fixes et figer une décision. Le résultat négatif d’une variante est conservé et expliqué.
 
-[Ouvrir l’atelier d’application](../../usecase/MyLittleMLLab/notebooks/AML_05_atelier.ipynb). Ce carnet est distinct du socle guidé. Les anciens repères numériques des ateliers et des projections détaillées sont conservés.
+## Accompagnement
 
-[Préparer les données et l’environnement de l’application](../../usecase/MyLittleMLLab/DEMARRER_APPLICATIONS.md).
-
-## Réussite attendue
-
-Choisir une expérience à partir d’une erreur observée et conclure même en cas d’échec.
+Chaque repère comporte une intention, une prévision, une exécution au signal et une sortie à expliquer. Les prises de rôle alternent et le bilan final reste individuel. Un message de refus attendu est une preuve de contrôle ; un blocage inattendu se traite avant la suite.
 
 ## Vérification et limites
 
-Le notebook du chapitre a été exécuté localement dans un noyau neuf. Les résultats des petits exemples ne constituent pas des scores Kaggle. Les ateliers sur données officielles ont leurs propres prérequis ; ils ne sont pas déclarés réexécutés par cette publication. [Détail des vérifications](../VERIFICATION.md).
+Les notebooks étudiants ont été exécutés dans des noyaux neufs sur CPU avec les CSV officiels et une limite de 15 000 lignes. Cette vérification locale ne couvre pas tous les PC/Mac ni une authentification ou un calcul distant Kaggle. Aucun score public ni usage en entreprise n’est déduit des résultats locaux.
 
-[Catalogue](../CATALOGUE.md) · [Aide](../AIDE.md)
+[Catalogue](../CATALOGUE.md) · [Séance J5](AML_05.md) · [Séance J6](AML_06.md)
